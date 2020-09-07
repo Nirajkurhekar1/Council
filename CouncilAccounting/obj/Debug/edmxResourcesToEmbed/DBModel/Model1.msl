@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Council_AccountingModelStoreContainer" CdmEntityContainer="Council_AccountingEntities">
+    <EntitySetMapping Name="BILL_INWARD">
+      <EntityTypeMapping TypeName="Council_AccountingModel.BILL_INWARD">
+        <MappingFragment StoreEntitySet="BILL_INWARD">
+          <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+          <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BILL_INWARD_PARTICULARDETAILS">
+      <EntityTypeMapping TypeName="Council_AccountingModel.BILL_INWARD_PARTICULARDETAILS">
+        <MappingFragment StoreEntitySet="BILL_INWARD_PARTICULARDETAILS">
+          <ScalarProperty Name="Bill_PD_Id" ColumnName="Bill_PD_Id" />
+          <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM12_WO_REGISTER">
+      <EntityTypeMapping TypeName="Council_AccountingModel.FORM12_WO_REGISTER">
+        <MappingFragment StoreEntitySet="FORM12_WO_REGISTER">
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Completion_certificate_No" ColumnName="Completion_certificate_No" />
+          <ScalarProperty Name="Actual_date_completion" ColumnName="Actual_date_completion" />
+          <ScalarProperty Name="SD_Receipt_No" ColumnName="SD_Receipt_No" />
+          <ScalarProperty Name="EMD_Amount" ColumnName="EMD_Amount" />
+          <ScalarProperty Name="EMD_Receipt_No" ColumnName="EMD_Receipt_No" />
+          <ScalarProperty Name="Total_Work_value" ColumnName="Total_Work_value" />
+          <ScalarProperty Name="Planned_completion_date" ColumnName="Planned_completion_date" />
+          <ScalarProperty Name="Sanctioned_Year" ColumnName="Sanctioned_Year" />
+          <ScalarProperty Name="Sanctioned_Tender_Rates" ColumnName="Sanctioned_Tender_Rates" />
+          <ScalarProperty Name="ContractorName" ColumnName="ContractorName" />
+          <ScalarProperty Name="Tender_Cost" ColumnName="Tender_Cost" />
+          <ScalarProperty Name="Estimated_Cost" ColumnName="Estimated_Cost" />
+          <ScalarProperty Name="Ref_WIP_Register" ColumnName="Ref_WIP_Register" />
+          <ScalarProperty Name="Work_Order_No" ColumnName="Work_Order_No" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Form12_Id" ColumnName="Form12_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

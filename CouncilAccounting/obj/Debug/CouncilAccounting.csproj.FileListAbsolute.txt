@@ -1,0 +1,754 @@
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll.config
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.pdb
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe.config
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.rsp
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe.config
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.rsp
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.AppContext.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Console.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Compression.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Claims.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.ValueTuple.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe.config
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.rsp
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\EntityFramework.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\WebGrease.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\EntityFramework.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.pdb
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csprojAssemblyReference.cache
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CoreCompileInputs.cache
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CopyComplete
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.pdb
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Data.Tools.Design.XmlCore.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Owin.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Cors.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.xml
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\de\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\es\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\fr\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\it\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\ja\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\ko\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\ru\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\zh-Hans\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\bin\zh-Hant\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+C:\Users\MYPC\source\repos\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.ResolveComReference.cache
+E:\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll.config
+E:\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll
+E:\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.pdb
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe.config
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.rsp
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe.config
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.rsp
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.AppContext.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Collections.Immutable.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Console.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Compression.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Reflection.Metadata.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.AccessControl.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Claims.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Principal.Windows.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.ValueTuple.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe.config
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.rsp
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe
+E:\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe.config
+E:\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.dll
+E:\CouncilAccounting\CouncilAccounting\bin\EntityFramework.dll
+E:\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Web.Infrastructure.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.dll
+E:\CouncilAccounting\CouncilAccounting\bin\Owin.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Cors.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.dll
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.dll
+E:\CouncilAccounting\CouncilAccounting\bin\WebGrease.dll
+E:\CouncilAccounting\CouncilAccounting\bin\EntityFramework.xml
+E:\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.xml
+E:\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.xml
+E:\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.pdb
+E:\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CouncilAccounting\CouncilAccounting\bin\de\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\es\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\fr\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\it\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\ja\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\ko\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\ru\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\zh-Hans\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\bin\zh-Hant\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csprojAssemblyReference.cache
+E:\CouncilAccounting\CouncilAccounting\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+E:\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.ResolveComReference.cache
+E:\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CopyComplete
+E:\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.dll
+E:\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.pdb
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll.config
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.pdb
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe.config
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.rsp
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe.config
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.rsp
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Managed.Core.targets
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.AppContext.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Collections.Immutable.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Console.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Compression.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Reflection.Metadata.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.AccessControl.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Claims.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Principal.Windows.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.ValueTuple.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XmlDocument.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe.config
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.rsp
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe.config
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Web.Infrastructure.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Owin.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Cors.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\WebGrease.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.pdb
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\de\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\es\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\fr\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\it\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\ja\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\ko\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\ru\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\zh-Hans\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\zh-Hant\Microsoft.Data.Tools.Design.XmlCore.resources.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csprojAssemblyReference.cache
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.ResolveComReference.cache
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CopyComplete
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.dll
+E:\git\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.pdb
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll.config
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.pdb
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe.config
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.rsp
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe.config
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.rsp
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Managed.Core.targets
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.AppContext.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Collections.Immutable.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Console.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Compression.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Reflection.Metadata.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.AccessControl.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Claims.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Principal.Windows.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.ValueTuple.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XmlDocument.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe.config
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.rsp
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe.config
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Web.Infrastructure.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Owin.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Cors.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\WebGrease.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.pdb
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csprojAssemblyReference.cache
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.ResolveComReference.cache
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CoreCompileInputs.cache
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CopyComplete
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.dll
+F:\git\CouncilAccounting\git\CouncilAccounting\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.pdb
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll.config
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.pdb
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe.config
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.rsp
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe.config
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.rsp
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Managed.Core.targets
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.AppContext.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Collections.Immutable.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Console.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Compression.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Reflection.Metadata.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.AccessControl.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Claims.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Principal.Windows.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.ValueTuple.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XmlDocument.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe.config
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.rsp
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe.config
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Web.Infrastructure.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Owin.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Cors.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\WebGrease.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.pdb
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.ResolveComReference.cache
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CoreCompileInputs.cache
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CopyComplete
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.dll
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.pdb
+F:\GIT 1\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csprojAssemblyReference.cache
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll.config
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\CouncilAccounting.pdb
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.exe.config
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csc.rsp
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.exe.config
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\csi.rsp
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.Managed.Core.targets
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.AppContext.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Collections.Immutable.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Console.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Compression.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.IO.Pipes.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Reflection.Metadata.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.AccessControl.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Claims.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Security.Principal.Windows.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.ValueTuple.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XmlDocument.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.exe.config
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\vbc.rsp
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\roslyn\VBCSCompiler.exe.config
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Web.Infrastructure.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Owin.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Cors.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\WebGrease.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\EntityFramework.SqlServer.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Core.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.Cookies.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Owin.Security.OAuth.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.Formatting.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.Cors.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Newtonsoft.Json.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Helpers.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Http.WebHost.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Mvc.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Optimization.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.Razor.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Deployment.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Web.WebPages.Razor.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Antlr3.Runtime.pdb
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csprojAssemblyReference.cache
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\Interop.UIAutomationBlockingCoreLib.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.ResolveComReference.cache
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.csproj.CopyComplete
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\obj\Debug\CouncilAccounting.pdb
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\Microsoft.Win32.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\netstandard.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.AppContext.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Collections.Concurrent.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Collections.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Collections.NonGeneric.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Collections.Specialized.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ComponentModel.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ComponentModel.EventBasedAsync.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ComponentModel.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ComponentModel.TypeConverter.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Console.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Data.Common.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.Contracts.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.Debug.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.FileVersionInfo.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.Process.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.StackTrace.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.TextWriterTraceListener.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.Tools.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.TraceSource.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Diagnostics.Tracing.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Drawing.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Dynamic.Runtime.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Globalization.Calendars.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Globalization.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Globalization.Extensions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.Compression.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.Compression.ZipFile.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.FileSystem.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.FileSystem.DriveInfo.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.FileSystem.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.FileSystem.Watcher.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.IsolatedStorage.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.MemoryMappedFiles.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.Pipes.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.IO.UnmanagedMemoryStream.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Linq.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Linq.Expressions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Linq.Parallel.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Linq.Queryable.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Http.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.NameResolution.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.NetworkInformation.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Ping.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Requests.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Security.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.Sockets.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.WebHeaderCollection.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.WebSockets.Client.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Net.WebSockets.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ObjectModel.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Reflection.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Reflection.Extensions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Reflection.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Resources.Reader.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Resources.ResourceManager.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Resources.Writer.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.CompilerServices.VisualC.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Extensions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Handles.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.InteropServices.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Numerics.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Serialization.Formatters.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Serialization.Json.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Serialization.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.Serialization.Xml.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Claims.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Cryptography.Algorithms.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Cryptography.Csp.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Cryptography.Encoding.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Cryptography.Primitives.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Cryptography.X509Certificates.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.Principal.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Security.SecureString.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Text.Encoding.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Text.Encoding.Extensions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Text.RegularExpressions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Overlapped.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Tasks.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Tasks.Parallel.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Thread.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.ThreadPool.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Timer.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ValueTuple.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Xml.ReaderWriter.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Xml.XDocument.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Xml.XmlDocument.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Xml.XmlSerializer.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Xml.XPath.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Xml.XPath.XDocument.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\FluentScheduler.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\FluentScheduler.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Reactive.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Tasks.Extensions.dll
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Reactive.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.Threading.Tasks.Extensions.xml
+E:\17-04-20\council_accounting\git\CouncilAccounting\CouncilAccounting\bin\System.ValueTuple.xml

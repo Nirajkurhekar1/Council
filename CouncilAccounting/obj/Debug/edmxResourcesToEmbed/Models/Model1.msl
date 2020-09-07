@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="waroraModelStoreContainer" CdmEntityContainer="waroraEntities">
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="waroraModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Session_key" ColumnName="Session_key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACCOUNT_SUBTYPE">
+      <EntityTypeMapping TypeName="waroraModel.ACCOUNT_SUBTYPE">
+        <MappingFragment StoreEntitySet="ACCOUNT_SUBTYPE">
+          <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+          <ScalarProperty Name="AccTypeId" ColumnName="AccTypeId" />
+          <ScalarProperty Name="NameSubType" ColumnName="NameSubType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACCOUNT_TYPE">
+      <EntityTypeMapping TypeName="waroraModel.ACCOUNT_TYPE">
+        <MappingFragment StoreEntitySet="ACCOUNT_TYPE">
+          <ScalarProperty Name="AccTypeId" ColumnName="AccTypeId" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ACCOUNTPOSTINGs">
+      <EntityTypeMapping TypeName="waroraModel.ACCOUNTPOSTING">
+        <MappingFragment StoreEntitySet="ACCOUNTPOSTING">
+          <ScalarProperty Name="Accountposting_Id" ColumnName="Accountposting_Id" />
+          <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+          <ScalarProperty Name="Acc_id" ColumnName="Acc_id" />
+          <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+          <ScalarProperty Name="Accountposting1" ColumnName="Accountposting" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="RefDocDetails" ColumnName="RefDocDetails" />
+          <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+          <ScalarProperty Name="RefParticularDetail" ColumnName="RefParticularDetail" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BANK_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.BANK_MSTR">
+        <MappingFragment StoreEntitySet="BANK_MSTR">
+          <ScalarProperty Name="Bank_Id" ColumnName="Bank_Id" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+          <ScalarProperty Name="IFSC_Code" ColumnName="IFSC_Code" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="BankMasterCode" ColumnName="BankMasterCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BILL_INWARD">
+      <EntityTypeMapping TypeName="waroraModel.BILL_INWARD">
+        <MappingFragment StoreEntitySet="BILL_INWARD">
+          <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+          <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+          <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+          <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="PSNNO" ColumnName="PSNNO" />
+          <ScalarProperty Name="Work_Order_NO" ColumnName="Work_Order_NO" />
+          <ScalarProperty Name="GrossAmount" ColumnName="GrossAmount" />
+          <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+          <ScalarProperty Name="NetAmountPayble" ColumnName="NetAmountPayble" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BILL_INWARD_PARTICULARDETAILS">
+      <EntityTypeMapping TypeName="waroraModel.BILL_INWARD_PARTICULARDETAILS">
+        <MappingFragment StoreEntitySet="BILL_INWARD_PARTICULARDETAILS">
+          <ScalarProperty Name="Bill_PD_Id" ColumnName="Bill_PD_Id" />
+          <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Quanity" ColumnName="Quanity" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRANCH_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.BRANCH_MSTR">
+        <MappingFragment StoreEntitySet="BRANCH_MSTR">
+          <ScalarProperty Name="Branch_Id" ColumnName="Branch_Id" />
+          <ScalarProperty Name="Branch_Name" ColumnName="Branch_Name" />
+          <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHARTOFACCOUNTs">
+      <EntityTypeMapping TypeName="waroraModel.CHARTOFACCOUNT">
+        <MappingFragment StoreEntitySet="CHARTOFACCOUNT">
+          <ScalarProperty Name="Acc_Id" ColumnName="Acc_Id" />
+          <ScalarProperty Name="ACC_Code" ColumnName="ACC_Code" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AccTypeId" ColumnName="AccTypeId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="subgroup" ColumnName="subgroup" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+          <ScalarProperty Name="FunctionCode" ColumnName="FunctionCode" />
+          <ScalarProperty Name="ObjectCode" ColumnName="ObjectCode" />
+          <ScalarProperty Name="FunctionCodeDescription" ColumnName="FunctionCodeDescription" />
+          <ScalarProperty Name="ObjectCodeDescription" ColumnName="ObjectCodeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMPANY_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.COMPANY_MSTR">
+        <MappingFragment StoreEntitySet="COMPANY_MSTR">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Comp_code" ColumnName="Comp_code" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="States" ColumnName="States" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Mobile_number" ColumnName="Mobile_number" />
+          <ScalarProperty Name="Pancard" ColumnName="Pancard" />
+          <ScalarProperty Name="GST_Number" ColumnName="GST_Number" />
+          <ScalarProperty Name="Company_Type" ColumnName="Company_Type" />
+          <ScalarProperty Name="Company_Formation_Date" ColumnName="Company_Formation_Date" />
+          <ScalarProperty Name="CIN_Number" ColumnName="CIN_Number" />
+          <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+          <ScalarProperty Name="Validfrom" ColumnName="Validfrom" />
+          <ScalarProperty Name="No_User_Allowed" ColumnName="No_User_Allowed" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role_assign" ColumnName="Role_assign" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMPANYDIRECTOR_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.COMPANYDIRECTOR_MSTR">
+        <MappingFragment StoreEntitySet="COMPANYDIRECTOR_MSTR">
+          <ScalarProperty Name="Director_Id" ColumnName="Director_Id" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Director_Propiertor" ColumnName="Director_Propiertor" />
+          <ScalarProperty Name="PAN_DIR" ColumnName="PAN_DIR" />
+          <ScalarProperty Name="DIN_Number" ColumnName="DIN_Number" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTMENT_MASTER">
+      <EntityTypeMapping TypeName="waroraModel.DEPARTMENT_MASTER">
+        <MappingFragment StoreEntitySet="DEPARTMENT_MASTER">
+          <ScalarProperty Name="DepId" ColumnName="DepId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="AuthorizePersonName" ColumnName="AuthorizePersonName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOCUMENT_TYPE">
+      <EntityTypeMapping TypeName="waroraModel.DOCUMENT_TYPE">
+        <MappingFragment StoreEntitySet="DOCUMENT_TYPE">
+          <ScalarProperty Name="DocTypeId" ColumnName="DocTypeId" />
+          <ScalarProperty Name="Document_Typename" ColumnName="Document_Typename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM_DETAILS">
+      <EntityTypeMapping TypeName="waroraModel.FORM_DETAILS">
+        <MappingFragment StoreEntitySet="FORM_DETAILS">
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+          <ScalarProperty Name="Form_Name" ColumnName="Form_Name" />
+          <ScalarProperty Name="DocTypeId" ColumnName="DocTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM12_WO_REGISTER">
+      <EntityTypeMapping TypeName="waroraModel.FORM12_WO_REGISTER">
+        <MappingFragment StoreEntitySet="FORM12_WO_REGISTER">
+          <ScalarProperty Name="Form12_Id" ColumnName="Form12_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Work_Order_No" ColumnName="Work_Order_No" />
+          <ScalarProperty Name="Ref_WIP_Register" ColumnName="Ref_WIP_Register" />
+          <ScalarProperty Name="Estimated_Cost" ColumnName="Estimated_Cost" />
+          <ScalarProperty Name="Tender_Cost" ColumnName="Tender_Cost" />
+          <ScalarProperty Name="Sanctioned_Tender_Rates" ColumnName="Sanctioned_Tender_Rates" />
+          <ScalarProperty Name="Planned_completion_date" ColumnName="Planned_completion_date" />
+          <ScalarProperty Name="Total_Work_value" ColumnName="Total_Work_value" />
+          <ScalarProperty Name="EMD_Receipt_No" ColumnName="EMD_Receipt_No" />
+          <ScalarProperty Name="EMD_Amount" ColumnName="EMD_Amount" />
+          <ScalarProperty Name="SD_Receipt_No" ColumnName="SD_Receipt_No" />
+          <ScalarProperty Name="Actual_date_completion" ColumnName="Actual_date_completion" />
+          <ScalarProperty Name="Completion_certificate_No" ColumnName="Completion_certificate_No" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+          <ScalarProperty Name="Sanctioned_Year" ColumnName="Sanctioned_Year" />
+          <ScalarProperty Name="VendorNameId" ColumnName="VendorNameId" />
+          <ScalarProperty Name="SD_Amount" ColumnName="SD_Amount" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM64_DEDUCTION">
+      <EntityTypeMapping TypeName="waroraModel.FORM64_DEDUCTION">
+        <MappingFragment StoreEntitySet="FORM64_DEDUCTION">
+          <ScalarProperty Name="FORM64_DEDUCTIONID" ColumnName="FORM64_DEDUCTIONID" />
+          <ScalarProperty Name="Form64_Id" ColumnName="Form64_Id" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="Accountcode" ColumnName="Accountcode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM64_PARTICULARDETAILS">
+      <EntityTypeMapping TypeName="waroraModel.FORM64_PARTICULARDETAILS">
+        <MappingFragment StoreEntitySet="FORM64_PARTICULARDETAILS">
+          <ScalarProperty Name="Form64_ParticularDetailID" ColumnName="Form64_ParticularDetailID" />
+          <ScalarProperty Name="Form64_Id" ColumnName="Form64_Id" />
+          <ScalarProperty Name="Bill_PD_Id" ColumnName="Bill_PD_Id" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="Accountcode" ColumnName="Accountcode" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM64_PAYMENTVOUCHER">
+      <EntityTypeMapping TypeName="waroraModel.FORM64_PAYMENTVOUCHER">
+        <MappingFragment StoreEntitySet="FORM64_PAYMENTVOUCHER">
+          <ScalarProperty Name="Form64_Id" ColumnName="Form64_Id" />
+          <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+          <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Bill_No" ColumnName="Bill_No" />
+          <ScalarProperty Name="Bill_Details" ColumnName="Bill_Details" />
+          <ScalarProperty Name="NamePayeeVendorContractor" ColumnName="NamePayeeVendorContractor" />
+          <ScalarProperty Name="Form12_Id" ColumnName="Form12_Id" />
+          <ScalarProperty Name="First_Advance" ColumnName="First_Advance" />
+          <ScalarProperty Name="Running_Amount" ColumnName="Running_Amount" />
+          <ScalarProperty Name="Final_Amount" ColumnName="Final_Amount" />
+          <ScalarProperty Name="GrossAmtPayable" ColumnName="GrossAmtPayable" />
+          <ScalarProperty Name="TotalDeduction" ColumnName="TotalDeduction" />
+          <ScalarProperty Name="Net_AmtPayable" ColumnName="Net_AmtPayable" />
+          <ScalarProperty Name="Amt_inwords" ColumnName="Amt_inwords" />
+          <ScalarProperty Name="Budget_provision" ColumnName="Budget_provision" />
+          <ScalarProperty Name="Budget_code" ColumnName="Budget_code" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="BillPaid_tillnow" ColumnName="BillPaid_tillnow" />
+          <ScalarProperty Name="Measurementbookreference" ColumnName="Measurementbookreference" />
+          <ScalarProperty Name="No_of_stock" ColumnName="No_of_stock" />
+          <ScalarProperty Name="current_billamt" ColumnName="current_billamt" />
+          <ScalarProperty Name="Book_No" ColumnName="Book_No" />
+          <ScalarProperty Name="passed_paymentamt" ColumnName="passed_paymentamt" />
+          <ScalarProperty Name="payment_inwords" ColumnName="payment_inwords" />
+          <ScalarProperty Name="Work_Order_No" ColumnName="Work_Order_No" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+          <ScalarProperty Name="PSN" ColumnName="PSN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM84_DETAIL_ESTIMATE">
+      <EntityTypeMapping TypeName="waroraModel.FORM84_DETAIL_ESTIMATE">
+        <MappingFragment StoreEntitySet="FORM84_DETAIL_ESTIMATE">
+          <ScalarProperty Name="Form84_ID" ColumnName="Form84_ID" />
+          <ScalarProperty Name="Form84_Year" ColumnName="Form84_Year" />
+          <ScalarProperty Name="TotalActual_last_year" ColumnName="TotalActual_last_year" />
+          <ScalarProperty Name="TotalActual_second_last_year" ColumnName="TotalActual_second_last_year" />
+          <ScalarProperty Name="TotalActual_third_last_year" ColumnName="TotalActual_third_last_year" />
+          <ScalarProperty Name="TotalBudget_current8_month" ColumnName="TotalBudget_current8_month" />
+          <ScalarProperty Name="TotalRemaining4_month" ColumnName="TotalRemaining4_month" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="TotalBudget_Estimate" ColumnName="TotalBudget_Estimate" />
+          <ScalarProperty Name="Remark_variation_difference" ColumnName="Remark_variation_difference" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORM84_PARTICULARDETAILS">
+      <EntityTypeMapping TypeName="waroraModel.FORM84_PARTICULARDETAILS">
+        <MappingFragment StoreEntitySet="FORM84_PARTICULARDETAILS">
+          <ScalarProperty Name="Form84_PDID" ColumnName="Form84_PDID" />
+          <ScalarProperty Name="Form84_ID" ColumnName="Form84_ID" />
+          <ScalarProperty Name="Particulars" ColumnName="Particulars" />
+          <ScalarProperty Name="Accountcode" ColumnName="Accountcode" />
+          <ScalarProperty Name="Actual_last_year" ColumnName="Actual_last_year" />
+          <ScalarProperty Name="Actual_second_last_year" ColumnName="Actual_second_last_year" />
+          <ScalarProperty Name="Actual_third_last_year" ColumnName="Actual_third_last_year" />
+          <ScalarProperty Name="Budget_current8_month" ColumnName="Budget_current8_month" />
+          <ScalarProperty Name="Remaining4_month" ColumnName="Remaining4_month" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Budget_Estimate" ColumnName="Budget_Estimate" />
+          <ScalarProperty Name="Remark_variation_difference" ColumnName="Remark_variation_difference" />
+          <ScalarProperty Name="Signature_image" ColumnName="Signature_image" />
+          <ScalarProperty Name="MainAccount" ColumnName="MainAccount" />
+          <ScalarProperty Name="SubAccount" ColumnName="SubAccount" />
+          <ScalarProperty Name="AccountCategory" ColumnName="AccountCategory" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FUNCTIONCODEs">
+      <EntityTypeMapping TypeName="waroraModel.FUNCTIONCODE">
+        <MappingFragment StoreEntitySet="FUNCTIONCODE">
+          <ScalarProperty Name="S_No" ColumnName="S.No" />
+          <ScalarProperty Name="FunctionCode1" ColumnName="FunctionCode" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="SubFunctionDescription" ColumnName="SubFunctionDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JOURNALVOUCHERs">
+      <EntityTypeMapping TypeName="waroraModel.JOURNALVOUCHER">
+        <MappingFragment StoreEntitySet="JOURNALVOUCHER">
+          <ScalarProperty Name="JV_Id" ColumnName="JV_Id" />
+          <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+          <ScalarProperty Name="JVDate" ColumnName="JVDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="Narration" ColumnName="Narration" />
+          <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+          <ScalarProperty Name="VoucherNo" ColumnName="VoucherNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OBJECTCODEs">
+      <EntityTypeMapping TypeName="waroraModel.OBJECTCODE">
+        <MappingFragment StoreEntitySet="OBJECTCODE">
+          <ScalarProperty Name="S_No" ColumnName="S.No" />
+          <ScalarProperty Name="Objectcode1" ColumnName="Objectcode" />
+          <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+          <ScalarProperty Name="Majorhead" ColumnName="Majorhead" />
+          <ScalarProperty Name="Minorhead" ColumnName="Minorhead" />
+          <ScalarProperty Name="DetailedHead" ColumnName="DetailedHead" />
+          <ScalarProperty Name="Accounttype" ColumnName="Accounttype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OPENING_BALANCE">
+      <EntityTypeMapping TypeName="waroraModel.OPENING_BALANCE">
+        <MappingFragment StoreEntitySet="OPENING_BALANCE">
+          <ScalarProperty Name="OPBID" ColumnName="OPBID" />
+          <ScalarProperty Name="YearId" ColumnName="YearId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="TotalDr" ColumnName="TotalDr" />
+          <ScalarProperty Name="TotalCr" ColumnName="TotalCr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLE_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.ROLE_MSTR">
+        <MappingFragment StoreEntitySet="ROLE_MSTR">
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Role_Dscr" ColumnName="Role_Dscr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SESSION_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.SESSION_MSTR">
+        <MappingFragment StoreEntitySet="SESSION_MSTR">
+          <ScalarProperty Name="YEARID" ColumnName="YEARID" />
+          <ScalarProperty Name="Session" ColumnName="Session" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.USER_MSTR">
+        <MappingFragment StoreEntitySet="USER_MSTR">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleAssign" ColumnName="RoleAssign" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Loginstatus" ColumnName="Loginstatus" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VENDOR_MSTR">
+      <EntityTypeMapping TypeName="waroraModel.VENDOR_MSTR">
+        <MappingFragment StoreEntitySet="VENDOR_MSTR">
+          <ScalarProperty Name="Vendor_Id" ColumnName="Vendor_Id" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorAddress" ColumnName="VendorAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+          <ScalarProperty Name="GISTINNo" ColumnName="GISTINNo" />
+          <ScalarProperty Name="VendorMasterCode" ColumnName="VendorMasterCode" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="FunctionCode" ColumnName="FunctionCode" />
+          <ScalarProperty Name="ObjectCode" ColumnName="ObjectCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

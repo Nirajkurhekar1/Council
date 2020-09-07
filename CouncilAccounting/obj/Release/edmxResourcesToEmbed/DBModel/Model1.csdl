@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Council_AccountingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BILL_INWARD">
+    <Key>
+      <PropertyRef Name="Bill_Id" />
+    </Key>
+    <Property Name="Bill_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Form_id" Type="Int32" />
+    <Property Name="TotalAmount" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="BillDate" Type="DateTime" Precision="3" />
+    <Property Name="Attachment" Type="Binary" MaxLength="200" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="BILL_INWARD_PARTICULARDETAILS">
+    <Key>
+      <PropertyRef Name="Bill_PD_Id" />
+    </Key>
+    <Property Name="Bill_PD_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Bill_Id" Type="Int32" />
+    <Property Name="AccountCode" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Narration" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Council_AccountingEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BILL_INWARD" EntityType="Self.BILL_INWARD" />
+    <EntitySet Name="BILL_INWARD_PARTICULARDETAILS" EntityType="Self.BILL_INWARD_PARTICULARDETAILS" />
+    <EntitySet Name="FORM12_WO_REGISTER" EntityType="Council_AccountingModel.FORM12_WO_REGISTER" />
+  </EntityContainer>
+  <EntityType Name="FORM12_WO_REGISTER">
+    <Key>
+      <PropertyRef Name="Form12_Id" />
+    </Key>
+    <Property Name="Form12_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Work_Order_No" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ref_WIP_Register" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Estimated_Cost" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Tender_Cost" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ContractorName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Sanctioned_Tender_Rates" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Sanctioned_Year" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Planned_completion_date" Type="DateTime" Precision="3" />
+    <Property Name="Total_Work_value" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EMD_Receipt_No" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EMD_Amount" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SD_Receipt_No" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Actual_date_completion" Type="DateTime" Precision="3" />
+    <Property Name="Completion_certificate_No" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Signature" Type="Binary" MaxLength="200" FixedLength="false" />
+  </EntityType>
+</Schema>

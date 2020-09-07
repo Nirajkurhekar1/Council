@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="waroraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="500" />
+    <Property Name="Password" Type="varchar" MaxLength="500" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Session_key" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ACCOUNT_SUBTYPE">
+    <Key>
+      <PropertyRef Name="Acc_subtype_Id" />
+    </Key>
+    <Property Name="Acc_subtype_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccTypeId" Type="int" Nullable="false" />
+    <Property Name="NameSubType" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ACCOUNT_TYPE">
+    <Key>
+      <PropertyRef Name="AccTypeId" />
+    </Key>
+    <Property Name="AccTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountType" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ACCOUNTPOSTING">
+    <Key>
+      <PropertyRef Name="Accountposting_Id" />
+    </Key>
+    <Property Name="Accountposting_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form_id" Type="int" Nullable="false" />
+    <Property Name="Acc_id" Type="int" Nullable="false" />
+    <Property Name="PostingDate" Type="datetime" />
+    <Property Name="Accountposting" Type="nvarchar" MaxLength="10" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RefDocDetails" Type="int" />
+    <Property Name="Acc_subtype_Id" Type="int" />
+    <Property Name="RefParticularDetail" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="BANK_MSTR">
+    <Key>
+      <PropertyRef Name="Bank_Id" />
+    </Key>
+    <Property Name="Bank_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BankName" Type="varchar" MaxLength="1000" />
+    <Property Name="BankAddress" Type="varchar" MaxLength="2000" />
+    <Property Name="IFSC_Code" Type="varchar" MaxLength="400" />
+    <Property Name="AccountNumber" Type="int" />
+    <Property Name="Branch" Type="varchar" MaxLength="100" />
+    <Property Name="Image" Type="varchar" MaxLength="200" />
+    <Property Name="Email" Type="varchar" MaxLength="256" />
+    <Property Name="ContactNo" Type="varchar" MaxLength="100" />
+    <Property Name="BankMasterCode" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="BILL_INWARD">
+    <Key>
+      <PropertyRef Name="Bill_Id" />
+    </Key>
+    <Property Name="Bill_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form_id" Type="int" />
+    <Property Name="BillDate" Type="datetime" />
+    <Property Name="Attachment" Type="varbinary" MaxLength="200" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DeptName" Type="nvarchar" MaxLength="200" />
+    <Property Name="PSNNO" Type="nvarchar" MaxLength="200" />
+    <Property Name="Work_Order_NO" Type="nvarchar" MaxLength="100" />
+    <Property Name="GrossAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalTaxAmount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NetAmountPayble" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="BILL_INWARD_PARTICULARDETAILS">
+    <Key>
+      <PropertyRef Name="Bill_PD_Id" />
+    </Key>
+    <Property Name="Bill_PD_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Bill_Id" Type="int" Nullable="false" />
+    <Property Name="AccountCode" Type="nvarchar" MaxLength="400" />
+    <Property Name="Narration" Type="nvarchar" MaxLength="400" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Quanity" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Rate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="100" />
+    <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Description" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="BRANCH_MSTR">
+    <Key>
+      <PropertyRef Name="Branch_Id" />
+    </Key>
+    <Property Name="Branch_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Branch_Name" Type="varchar" MaxLength="100" />
+    <Property Name="BranchCode" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CHARTOFACCOUNT">
+    <Key>
+      <PropertyRef Name="Acc_Id" />
+    </Key>
+    <Property Name="Acc_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACC_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="Narration" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AccountType" Type="nvarchar" MaxLength="100" />
+    <Property Name="AccTypeId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="subgroup" Type="nvarchar" MaxLength="100" />
+    <Property Name="GroupName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Acc_subtype_Id" Type="int" />
+    <Property Name="FunctionCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="ObjectCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="FunctionCodeDescription" Type="nvarchar" MaxLength="400" />
+    <Property Name="ObjectCodeDescription" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="COMPANY_MSTR">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Comp_code" Type="nvarchar" MaxLength="200" />
+    <Property Name="Company_Name" Type="nvarchar" MaxLength="500" />
+    <Property Name="Address" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Pincode" Type="nvarchar" MaxLength="80" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="States" Type="nvarchar" MaxLength="100" />
+    <Property Name="EMail" Type="nvarchar" MaxLength="256" />
+    <Property Name="Mobile_number" Type="nvarchar" MaxLength="100" />
+    <Property Name="Pancard" Type="nvarchar" MaxLength="100" />
+    <Property Name="GST_Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="Company_Type" Type="nvarchar(max)" />
+    <Property Name="Company_Formation_Date" Type="datetime" />
+    <Property Name="CIN_Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="ValidTo" Type="datetime" />
+    <Property Name="Validfrom" Type="datetime" />
+    <Property Name="No_User_Allowed" Type="int" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="Username" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar" MaxLength="500" />
+    <Property Name="Role_assign" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Image" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="COMPANYDIRECTOR_MSTR">
+    <Key>
+      <PropertyRef Name="Director_Id" />
+    </Key>
+    <Property Name="Director_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyId" Type="int" />
+    <Property Name="Director_Propiertor" Type="varchar" MaxLength="500" />
+    <Property Name="PAN_DIR" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="DIN_Number" Type="varchar" MaxLength="1000" />
+    <Property Name="Contact" Type="varchar" MaxLength="1000" />
+    <Property Name="Address" Type="varchar" MaxLength="1000" />
+    <Property Name="DOB" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DEPARTMENT_MASTER">
+    <Key>
+      <PropertyRef Name="DepId" />
+    </Key>
+    <Property Name="DepId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="200" />
+    <Property Name="AuthorizePersonName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="DOCUMENT_TYPE">
+    <Key>
+      <PropertyRef Name="DocTypeId" />
+    </Key>
+    <Property Name="DocTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Document_Typename" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="FORM_DETAILS">
+    <Key>
+      <PropertyRef Name="Form_Id" />
+    </Key>
+    <Property Name="Form_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form_Name" Type="varchar" MaxLength="100" />
+    <Property Name="DocTypeId" Type="int" />
+  </EntityType>
+  <EntityType Name="FORM12_WO_REGISTER">
+    <Key>
+      <PropertyRef Name="Form12_Id" />
+    </Key>
+    <Property Name="Form12_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Work_Order_No" Type="nvarchar" MaxLength="100" />
+    <Property Name="Ref_WIP_Register" Type="nvarchar" MaxLength="500" />
+    <Property Name="Estimated_Cost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Tender_Cost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Sanctioned_Tender_Rates" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Planned_completion_date" Type="datetime" />
+    <Property Name="Total_Work_value" Type="nvarchar" MaxLength="100" />
+    <Property Name="EMD_Receipt_No" Type="nvarchar" MaxLength="100" />
+    <Property Name="EMD_Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SD_Receipt_No" Type="nvarchar" MaxLength="200" />
+    <Property Name="Actual_date_completion" Type="datetime" />
+    <Property Name="Completion_certificate_No" Type="nvarchar" MaxLength="100" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Signature" Type="varbinary(max)" />
+    <Property Name="Sanctioned_Year" Type="nvarchar" MaxLength="50" />
+    <Property Name="VendorNameId" Type="int" />
+    <Property Name="SD_Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="FORM64_DEDUCTION">
+    <Key>
+      <PropertyRef Name="FORM64_DEDUCTIONID" />
+    </Key>
+    <Property Name="FORM64_DEDUCTIONID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form64_Id" Type="int" />
+    <Property Name="Narration" Type="nvarchar" MaxLength="200" />
+    <Property Name="Accountcode" Type="nvarchar" MaxLength="100" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Description" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="FORM64_PARTICULARDETAILS">
+    <Key>
+      <PropertyRef Name="Form64_ParticularDetailID" />
+    </Key>
+    <Property Name="Form64_ParticularDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form64_Id" Type="int" />
+    <Property Name="Bill_PD_Id" Type="int" />
+    <Property Name="Narration" Type="nvarchar" MaxLength="200" />
+    <Property Name="Accountcode" Type="nvarchar" MaxLength="100" />
+    <Property Name="Qty" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Rate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="100" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Description" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="FORM64_PAYMENTVOUCHER">
+    <Key>
+      <PropertyRef Name="Form64_Id" />
+    </Key>
+    <Property Name="Form64_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form_id" Type="int" />
+    <Property Name="Bill_Id" Type="int" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Bill_No" Type="nvarchar" MaxLength="200" />
+    <Property Name="Bill_Details" Type="nvarchar" MaxLength="200" />
+    <Property Name="NamePayeeVendorContractor" Type="nvarchar(max)" />
+    <Property Name="Form12_Id" Type="int" />
+    <Property Name="First_Advance" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Running_Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Final_Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GrossAmtPayable" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalDeduction" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Net_AmtPayable" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Amt_inwords" Type="nvarchar(max)" />
+    <Property Name="Budget_provision" Type="nvarchar(max)" />
+    <Property Name="Budget_code" Type="nvarchar" MaxLength="200" />
+    <Property Name="Balance" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BillPaid_tillnow" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Measurementbookreference" Type="nvarchar" MaxLength="200" />
+    <Property Name="No_of_stock" Type="nvarchar" MaxLength="200" />
+    <Property Name="current_billamt" Type="nvarchar" MaxLength="200" />
+    <Property Name="Book_No" Type="nvarchar" MaxLength="200" />
+    <Property Name="passed_paymentamt" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="payment_inwords" Type="nvarchar" MaxLength="200" />
+    <Property Name="Work_Order_No" Type="nvarchar" MaxLength="100" />
+    <Property Name="Bank" Type="nvarchar" MaxLength="200" />
+    <Property Name="ChequeNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="PSN" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="FORM84_DETAIL_ESTIMATE">
+    <Key>
+      <PropertyRef Name="Form84_ID" />
+    </Key>
+    <Property Name="Form84_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form84_Year" Type="nvarchar" MaxLength="1000" />
+    <Property Name="TotalActual_last_year" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalActual_second_last_year" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalActual_third_last_year" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalBudget_current8_month" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalRemaining4_month" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalBudget_Estimate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Remark_variation_difference" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FORM84_PARTICULARDETAILS">
+    <Key>
+      <PropertyRef Name="Form84_PDID" />
+    </Key>
+    <Property Name="Form84_PDID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form84_ID" Type="int" />
+    <Property Name="Particulars" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Accountcode" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Actual_last_year" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Actual_second_last_year" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Actual_third_last_year" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Budget_current8_month" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Remaining4_month" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Budget_Estimate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Remark_variation_difference" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Signature_image" Type="varbinary(max)" />
+    <Property Name="MainAccount" Type="nvarchar" MaxLength="200" />
+    <Property Name="SubAccount" Type="nvarchar" MaxLength="200" />
+    <Property Name="AccountCategory" Type="nvarchar" MaxLength="200" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Session" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="FUNCTIONCODE">
+    <Key>
+      <PropertyRef Name="S.No" />
+    </Key>
+    <Property Name="S.No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FunctionCode" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FunctionName" Type="varchar" MaxLength="100" />
+    <Property Name="SubFunctionDescription" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="JOURNALVOUCHER">
+    <Key>
+      <PropertyRef Name="JV_Id" />
+    </Key>
+    <Property Name="JV_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="JVDate" Type="datetime" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AccountType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Narration" Type="nvarchar" MaxLength="100" />
+    <Property Name="Acc_subtype_Id" Type="int" />
+    <Property Name="VoucherNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="OBJECTCODE">
+    <Key>
+      <PropertyRef Name="S.No" />
+    </Key>
+    <Property Name="S.No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Objectcode" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ObjectDescription" Type="varchar" MaxLength="1000" />
+    <Property Name="Majorhead" Type="varchar" MaxLength="200" />
+    <Property Name="Minorhead" Type="varchar" MaxLength="200" />
+    <Property Name="DetailedHead" Type="varchar" MaxLength="200" />
+    <Property Name="Accounttype" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="OPENING_BALANCE">
+    <Key>
+      <PropertyRef Name="OPBID" />
+    </Key>
+    <Property Name="OPBID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YearId" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+    <Property Name="TotalDr" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TotalCr" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="ROLE_MSTR">
+    <Key>
+      <PropertyRef Name="Role_Id" />
+    </Key>
+    <Property Name="Role_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Dscr" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="SESSION_MSTR">
+    <Key>
+      <PropertyRef Name="YEARID" />
+    </Key>
+    <Property Name="YEARID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Session" Type="varchar" MaxLength="100" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="USER_MSTR">
+    <Key>
+      <PropertyRef Name="User_Id" />
+    </Key>
+    <Property Name="User_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="400" />
+    <Property Name="Address" Type="nvarchar" MaxLength="400" />
+    <Property Name="Email" Type="nvarchar" MaxLength="400" />
+    <Property Name="State" Type="nvarchar" MaxLength="400" />
+    <Property Name="City" Type="nvarchar" MaxLength="400" />
+    <Property Name="ContactNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Username" Type="nvarchar" MaxLength="400" />
+    <Property Name="Password" Type="nvarchar" MaxLength="500" />
+    <Property Name="RoleAssign" Type="nvarchar" MaxLength="400" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="Image" Type="varbinary(max)" />
+    <Property Name="Loginstatus" Type="int" />
+    <Property Name="Token" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="VENDOR_MSTR">
+    <Key>
+      <PropertyRef Name="Vendor_Id" />
+    </Key>
+    <Property Name="Vendor_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="1000" />
+    <Property Name="VendorAddress" Type="nvarchar" MaxLength="2000" />
+    <Property Name="City" Type="nvarchar" MaxLength="400" />
+    <Property Name="State" Type="nvarchar" MaxLength="100" />
+    <Property Name="PANNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="GISTINNo" Type="nvarchar" MaxLength="200" />
+    <Property Name="VendorMasterCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="ContactNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FunctionCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="ObjectCode" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_ACCOUNTPOSTING_CHARTOFACCOUNT">
+    <End Role="CHARTOFACCOUNT" Type="Self.CHARTOFACCOUNT" Multiplicity="1" />
+    <End Role="ACCOUNTPOSTING" Type="Self.ACCOUNTPOSTING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHARTOFACCOUNT">
+        <PropertyRef Name="Acc_Id" />
+      </Principal>
+      <Dependent Role="ACCOUNTPOSTING">
+        <PropertyRef Name="Acc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ACCOUNTPOSTING_FORM_DETAILS">
+    <End Role="FORM_DETAILS" Type="Self.FORM_DETAILS" Multiplicity="1" />
+    <End Role="ACCOUNTPOSTING" Type="Self.ACCOUNTPOSTING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FORM_DETAILS">
+        <PropertyRef Name="Form_Id" />
+      </Principal>
+      <Dependent Role="ACCOUNTPOSTING">
+        <PropertyRef Name="Form_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BILL_INWARD_FORM_DETAILS">
+    <End Role="FORM_DETAILS" Type="Self.FORM_DETAILS" Multiplicity="0..1" />
+    <End Role="BILL_INWARD" Type="Self.BILL_INWARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FORM_DETAILS">
+        <PropertyRef Name="Form_Id" />
+      </Principal>
+      <Dependent Role="BILL_INWARD">
+        <PropertyRef Name="Form_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD">
+    <End Role="BILL_INWARD" Type="Self.BILL_INWARD" Multiplicity="1" />
+    <End Role="BILL_INWARD_PARTICULARDETAILS" Type="Self.BILL_INWARD_PARTICULARDETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BILL_INWARD">
+        <PropertyRef Name="Bill_Id" />
+      </Principal>
+      <Dependent Role="BILL_INWARD_PARTICULARDETAILS">
+        <PropertyRef Name="Bill_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CHARTOFACCOUNT_ACCOUNT_TYPE">
+    <End Role="ACCOUNT_TYPE" Type="Self.ACCOUNT_TYPE" Multiplicity="1" />
+    <End Role="CHARTOFACCOUNT" Type="Self.CHARTOFACCOUNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ACCOUNT_TYPE">
+        <PropertyRef Name="AccTypeId" />
+      </Principal>
+      <Dependent Role="CHARTOFACCOUNT">
+        <PropertyRef Name="AccTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER">
+    <End Role="FORM64_PAYMENTVOUCHER" Type="Self.FORM64_PAYMENTVOUCHER" Multiplicity="0..1" />
+    <End Role="FORM64_PARTICULARDETAILS" Type="Self.FORM64_PARTICULARDETAILS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FORM64_PAYMENTVOUCHER">
+        <PropertyRef Name="Form64_Id" />
+      </Principal>
+      <Dependent Role="FORM64_PARTICULARDETAILS">
+        <PropertyRef Name="Form64_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="waroraModelStoreContainer">
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="council" store:Type="Tables" />
+    <EntitySet Name="ACCOUNT_SUBTYPE" EntityType="Self.ACCOUNT_SUBTYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ACCOUNT_TYPE" EntityType="Self.ACCOUNT_TYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ACCOUNTPOSTING" EntityType="Self.ACCOUNTPOSTING" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BANK_MSTR" EntityType="Self.BANK_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BILL_INWARD" EntityType="Self.BILL_INWARD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BILL_INWARD_PARTICULARDETAILS" EntityType="Self.BILL_INWARD_PARTICULARDETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BRANCH_MSTR" EntityType="Self.BRANCH_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHARTOFACCOUNT" EntityType="Self.CHARTOFACCOUNT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="COMPANY_MSTR" EntityType="Self.COMPANY_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="COMPANYDIRECTOR_MSTR" EntityType="Self.COMPANYDIRECTOR_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEPARTMENT_MASTER" EntityType="Self.DEPARTMENT_MASTER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DOCUMENT_TYPE" EntityType="Self.DOCUMENT_TYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM_DETAILS" EntityType="Self.FORM_DETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM12_WO_REGISTER" EntityType="Self.FORM12_WO_REGISTER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM64_DEDUCTION" EntityType="Self.FORM64_DEDUCTION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM64_PARTICULARDETAILS" EntityType="Self.FORM64_PARTICULARDETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM64_PAYMENTVOUCHER" EntityType="Self.FORM64_PAYMENTVOUCHER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM84_DETAIL_ESTIMATE" EntityType="Self.FORM84_DETAIL_ESTIMATE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORM84_PARTICULARDETAILS" EntityType="Self.FORM84_PARTICULARDETAILS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FUNCTIONCODE" EntityType="Self.FUNCTIONCODE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JOURNALVOUCHER" EntityType="Self.JOURNALVOUCHER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OBJECTCODE" EntityType="Self.OBJECTCODE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OPENING_BALANCE" EntityType="Self.OPENING_BALANCE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROLE_MSTR" EntityType="Self.ROLE_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SESSION_MSTR" EntityType="Self.SESSION_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER_MSTR" EntityType="Self.USER_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VENDOR_MSTR" EntityType="Self.VENDOR_MSTR" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ACCOUNTPOSTING_CHARTOFACCOUNT" Association="Self.FK_ACCOUNTPOSTING_CHARTOFACCOUNT">
+      <End Role="CHARTOFACCOUNT" EntitySet="CHARTOFACCOUNT" />
+      <End Role="ACCOUNTPOSTING" EntitySet="ACCOUNTPOSTING" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ACCOUNTPOSTING_FORM_DETAILS" Association="Self.FK_ACCOUNTPOSTING_FORM_DETAILS">
+      <End Role="FORM_DETAILS" EntitySet="FORM_DETAILS" />
+      <End Role="ACCOUNTPOSTING" EntitySet="ACCOUNTPOSTING" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BILL_INWARD_FORM_DETAILS" Association="Self.FK_BILL_INWARD_FORM_DETAILS">
+      <End Role="FORM_DETAILS" EntitySet="FORM_DETAILS" />
+      <End Role="BILL_INWARD" EntitySet="BILL_INWARD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD" Association="Self.FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD">
+      <End Role="BILL_INWARD" EntitySet="BILL_INWARD" />
+      <End Role="BILL_INWARD_PARTICULARDETAILS" EntitySet="BILL_INWARD_PARTICULARDETAILS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CHARTOFACCOUNT_ACCOUNT_TYPE" Association="Self.FK_CHARTOFACCOUNT_ACCOUNT_TYPE">
+      <End Role="ACCOUNT_TYPE" EntitySet="ACCOUNT_TYPE" />
+      <End Role="CHARTOFACCOUNT" EntitySet="CHARTOFACCOUNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER" Association="Self.FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER">
+      <End Role="FORM64_PAYMENTVOUCHER" EntitySet="FORM64_PAYMENTVOUCHER" />
+      <End Role="FORM64_PARTICULARDETAILS" EntitySet="FORM64_PARTICULARDETAILS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

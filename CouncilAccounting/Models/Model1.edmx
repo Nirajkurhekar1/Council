@@ -1,0 +1,1558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="waroraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="500" />
+          <Property Name="Password" Type="varchar" MaxLength="500" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Session_key" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="ACCOUNT_SUBTYPE">
+          <Key>
+            <PropertyRef Name="Acc_subtype_Id" />
+          </Key>
+          <Property Name="Acc_subtype_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccTypeId" Type="int" Nullable="false" />
+          <Property Name="NameSubType" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ACCOUNT_TYPE">
+          <Key>
+            <PropertyRef Name="AccTypeId" />
+          </Key>
+          <Property Name="AccTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountType" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ACCOUNTPOSTING">
+          <Key>
+            <PropertyRef Name="Accountposting_Id" />
+          </Key>
+          <Property Name="Accountposting_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form_id" Type="int" Nullable="false" />
+          <Property Name="Acc_id" Type="int" Nullable="false" />
+          <Property Name="PostingDate" Type="datetime" />
+          <Property Name="Accountposting" Type="nvarchar" MaxLength="10" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="RefDocDetails" Type="int" />
+          <Property Name="Acc_subtype_Id" Type="int" />
+          <Property Name="RefParticularDetail" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="BANK_MSTR">
+          <Key>
+            <PropertyRef Name="Bank_Id" />
+          </Key>
+          <Property Name="Bank_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BankName" Type="varchar" MaxLength="1000" />
+          <Property Name="BankAddress" Type="varchar" MaxLength="2000" />
+          <Property Name="IFSC_Code" Type="varchar" MaxLength="400" />
+          <Property Name="AccountNumber" Type="int" />
+          <Property Name="Branch" Type="varchar" MaxLength="100" />
+          <Property Name="Image" Type="varchar" MaxLength="200" />
+          <Property Name="Email" Type="varchar" MaxLength="256" />
+          <Property Name="ContactNo" Type="varchar" MaxLength="100" />
+          <Property Name="BankMasterCode" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="BILL_INWARD">
+          <Key>
+            <PropertyRef Name="Bill_Id" />
+          </Key>
+          <Property Name="Bill_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form_id" Type="int" />
+          <Property Name="BillDate" Type="datetime" />
+          <Property Name="Attachment" Type="varbinary" MaxLength="200" />
+          <Property Name="VendorName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="DeptName" Type="nvarchar" MaxLength="200" />
+          <Property Name="PSNNO" Type="nvarchar" MaxLength="200" />
+          <Property Name="Work_Order_NO" Type="nvarchar" MaxLength="100" />
+          <Property Name="GrossAmount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalTaxAmount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NetAmountPayble" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="BILL_INWARD_PARTICULARDETAILS">
+          <Key>
+            <PropertyRef Name="Bill_PD_Id" />
+          </Key>
+          <Property Name="Bill_PD_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Bill_Id" Type="int" Nullable="false" />
+          <Property Name="AccountCode" Type="nvarchar" MaxLength="400" />
+          <Property Name="Narration" Type="nvarchar" MaxLength="400" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Quanity" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rate" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Unit" Type="nvarchar" MaxLength="100" />
+          <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="BRANCH_MSTR">
+          <Key>
+            <PropertyRef Name="Branch_Id" />
+          </Key>
+          <Property Name="Branch_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Branch_Name" Type="varchar" MaxLength="100" />
+          <Property Name="BranchCode" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CHARTOFACCOUNT">
+          <Key>
+            <PropertyRef Name="Acc_Id" />
+          </Key>
+          <Property Name="Acc_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ACC_Code" Type="nvarchar" MaxLength="100" />
+          <Property Name="Narration" Type="nvarchar" MaxLength="1000" />
+          <Property Name="AccountType" Type="nvarchar" MaxLength="100" />
+          <Property Name="AccTypeId" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="subgroup" Type="nvarchar" MaxLength="100" />
+          <Property Name="GroupName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Acc_subtype_Id" Type="int" />
+          <Property Name="FunctionCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="ObjectCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="FunctionCodeDescription" Type="nvarchar" MaxLength="400" />
+          <Property Name="ObjectCodeDescription" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="COMPANY_MSTR">
+          <Key>
+            <PropertyRef Name="CompanyId" />
+          </Key>
+          <Property Name="CompanyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Comp_code" Type="nvarchar" MaxLength="200" />
+          <Property Name="Company_Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="Address" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Pincode" Type="nvarchar" MaxLength="80" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" />
+          <Property Name="States" Type="nvarchar" MaxLength="100" />
+          <Property Name="EMail" Type="nvarchar" MaxLength="256" />
+          <Property Name="Mobile_number" Type="nvarchar" MaxLength="100" />
+          <Property Name="Pancard" Type="nvarchar" MaxLength="100" />
+          <Property Name="GST_Number" Type="nvarchar" MaxLength="100" />
+          <Property Name="Company_Type" Type="nvarchar(max)" />
+          <Property Name="Company_Formation_Date" Type="datetime" />
+          <Property Name="CIN_Number" Type="nvarchar" MaxLength="100" />
+          <Property Name="ValidTo" Type="datetime" />
+          <Property Name="Validfrom" Type="datetime" />
+          <Property Name="No_User_Allowed" Type="int" />
+          <Property Name="Status" Type="nvarchar" MaxLength="100" />
+          <Property Name="Username" Type="nvarchar(max)" />
+          <Property Name="Password" Type="nvarchar" MaxLength="500" />
+          <Property Name="Role_assign" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Image" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="COMPANYDIRECTOR_MSTR">
+          <Key>
+            <PropertyRef Name="Director_Id" />
+          </Key>
+          <Property Name="Director_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CompanyId" Type="int" />
+          <Property Name="Director_Propiertor" Type="varchar" MaxLength="500" />
+          <Property Name="PAN_DIR" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="DIN_Number" Type="varchar" MaxLength="1000" />
+          <Property Name="Contact" Type="varchar" MaxLength="1000" />
+          <Property Name="Address" Type="varchar" MaxLength="1000" />
+          <Property Name="DOB" Type="datetime" />
+        </EntityType>
+        <EntityType Name="DEPARTMENT_MASTER">
+          <Key>
+            <PropertyRef Name="DepId" />
+          </Key>
+          <Property Name="DepId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="DepartmentName" Type="nvarchar" MaxLength="200" />
+          <Property Name="AuthorizePersonName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="DOCUMENT_TYPE">
+          <Key>
+            <PropertyRef Name="DocTypeId" />
+          </Key>
+          <Property Name="DocTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Document_Typename" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="FORM_DETAILS">
+          <Key>
+            <PropertyRef Name="Form_Id" />
+          </Key>
+          <Property Name="Form_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form_Name" Type="varchar" MaxLength="100" />
+          <Property Name="DocTypeId" Type="int" />
+        </EntityType>
+        <EntityType Name="FORM12_WO_REGISTER">
+          <Key>
+            <PropertyRef Name="Form12_Id" />
+          </Key>
+          <Property Name="Form12_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="ProjectName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Work_Order_No" Type="nvarchar" MaxLength="100" />
+          <Property Name="Ref_WIP_Register" Type="nvarchar" MaxLength="500" />
+          <Property Name="Estimated_Cost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Tender_Cost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Sanctioned_Tender_Rates" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Planned_completion_date" Type="datetime" />
+          <Property Name="Total_Work_value" Type="nvarchar" MaxLength="100" />
+          <Property Name="EMD_Receipt_No" Type="nvarchar" MaxLength="100" />
+          <Property Name="EMD_Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SD_Receipt_No" Type="nvarchar" MaxLength="200" />
+          <Property Name="Actual_date_completion" Type="datetime" />
+          <Property Name="Completion_certificate_No" Type="nvarchar" MaxLength="100" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Signature" Type="varbinary(max)" />
+          <Property Name="Sanctioned_Year" Type="nvarchar" MaxLength="50" />
+          <Property Name="VendorNameId" Type="int" />
+          <Property Name="SD_Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="FORM64_DEDUCTION">
+          <Key>
+            <PropertyRef Name="FORM64_DEDUCTIONID" />
+          </Key>
+          <Property Name="FORM64_DEDUCTIONID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form64_Id" Type="int" />
+          <Property Name="Narration" Type="nvarchar" MaxLength="200" />
+          <Property Name="Accountcode" Type="nvarchar" MaxLength="100" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="FORM64_PARTICULARDETAILS">
+          <Key>
+            <PropertyRef Name="Form64_ParticularDetailID" />
+          </Key>
+          <Property Name="Form64_ParticularDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form64_Id" Type="int" />
+          <Property Name="Bill_PD_Id" Type="int" />
+          <Property Name="Narration" Type="nvarchar" MaxLength="200" />
+          <Property Name="Accountcode" Type="nvarchar" MaxLength="100" />
+          <Property Name="Qty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Rate" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Unit" Type="nvarchar" MaxLength="100" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="FORM64_PAYMENTVOUCHER">
+          <Key>
+            <PropertyRef Name="Form64_Id" />
+          </Key>
+          <Property Name="Form64_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form_id" Type="int" />
+          <Property Name="Bill_Id" Type="int" />
+          <Property Name="DepartmentName" Type="nvarchar" MaxLength="200" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Bill_No" Type="nvarchar" MaxLength="200" />
+          <Property Name="Bill_Details" Type="nvarchar" MaxLength="200" />
+          <Property Name="NamePayeeVendorContractor" Type="nvarchar(max)" />
+          <Property Name="Form12_Id" Type="int" />
+          <Property Name="First_Advance" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Running_Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Final_Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="GrossAmtPayable" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalDeduction" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Net_AmtPayable" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Amt_inwords" Type="nvarchar(max)" />
+          <Property Name="Budget_provision" Type="nvarchar(max)" />
+          <Property Name="Budget_code" Type="nvarchar" MaxLength="200" />
+          <Property Name="Balance" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="BillPaid_tillnow" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Measurementbookreference" Type="nvarchar" MaxLength="200" />
+          <Property Name="No_of_stock" Type="nvarchar" MaxLength="200" />
+          <Property Name="current_billamt" Type="nvarchar" MaxLength="200" />
+          <Property Name="Book_No" Type="nvarchar" MaxLength="200" />
+          <Property Name="passed_paymentamt" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="payment_inwords" Type="nvarchar" MaxLength="200" />
+          <Property Name="Work_Order_No" Type="nvarchar" MaxLength="100" />
+          <Property Name="Bank" Type="nvarchar" MaxLength="200" />
+          <Property Name="ChequeNo" Type="nvarchar" MaxLength="200" />
+          <Property Name="PSN" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="FORM84_DETAIL_ESTIMATE">
+          <Key>
+            <PropertyRef Name="Form84_ID" />
+          </Key>
+          <Property Name="Form84_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form84_Year" Type="nvarchar" MaxLength="1000" />
+          <Property Name="TotalActual_last_year" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalActual_second_last_year" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalActual_third_last_year" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalBudget_current8_month" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalRemaining4_month" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalBudget_Estimate" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Remark_variation_difference" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="FORM84_PARTICULARDETAILS">
+          <Key>
+            <PropertyRef Name="Form84_PDID" />
+          </Key>
+          <Property Name="Form84_PDID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Form84_ID" Type="int" />
+          <Property Name="Particulars" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Accountcode" Type="nvarchar" MaxLength="2000" />
+          <Property Name="Actual_last_year" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Actual_second_last_year" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Actual_third_last_year" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Budget_current8_month" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Remaining4_month" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Total" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Budget_Estimate" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Remark_variation_difference" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Signature_image" Type="varbinary(max)" />
+          <Property Name="MainAccount" Type="nvarchar" MaxLength="200" />
+          <Property Name="SubAccount" Type="nvarchar" MaxLength="200" />
+          <Property Name="AccountCategory" Type="nvarchar" MaxLength="200" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Session" Type="nvarchar" MaxLength="100" />
+          <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Percentage" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="FUNCTIONCODE">
+          <Key>
+            <PropertyRef Name="S.No" />
+          </Key>
+          <Property Name="S.No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FunctionCode" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FunctionName" Type="varchar" MaxLength="100" />
+          <Property Name="SubFunctionDescription" Type="varchar" MaxLength="100" />
+          <Property Name="Description" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="JOURNALVOUCHER">
+          <Key>
+            <PropertyRef Name="JV_Id" />
+          </Key>
+          <Property Name="JV_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="JVDate" Type="datetime" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AccountType" Type="nvarchar" MaxLength="100" />
+          <Property Name="Narration" Type="nvarchar" MaxLength="100" />
+          <Property Name="Acc_subtype_Id" Type="int" />
+          <Property Name="VoucherNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="Description" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="OBJECTCODE">
+          <Key>
+            <PropertyRef Name="S.No" />
+          </Key>
+          <Property Name="S.No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Objectcode" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ObjectDescription" Type="varchar" MaxLength="1000" />
+          <Property Name="Majorhead" Type="varchar" MaxLength="200" />
+          <Property Name="Minorhead" Type="varchar" MaxLength="200" />
+          <Property Name="DetailedHead" Type="varchar" MaxLength="200" />
+          <Property Name="Accounttype" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="OPENING_BALANCE">
+          <Key>
+            <PropertyRef Name="OPBID" />
+          </Key>
+          <Property Name="OPBID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YearId" Type="nvarchar" MaxLength="100" />
+          <Property Name="CreationDate" Type="datetime" />
+          <Property Name="Remarks" Type="nvarchar" MaxLength="100" />
+          <Property Name="TotalDr" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalCr" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="ROLE_MSTR">
+          <Key>
+            <PropertyRef Name="Role_Id" />
+          </Key>
+          <Property Name="Role_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Role_Dscr" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="SESSION_MSTR">
+          <Key>
+            <PropertyRef Name="YEARID" />
+          </Key>
+          <Property Name="YEARID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Session" Type="varchar" MaxLength="100" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="USER_MSTR">
+          <Key>
+            <PropertyRef Name="User_Id" />
+          </Key>
+          <Property Name="User_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="400" />
+          <Property Name="Address" Type="nvarchar" MaxLength="400" />
+          <Property Name="Email" Type="nvarchar" MaxLength="400" />
+          <Property Name="State" Type="nvarchar" MaxLength="400" />
+          <Property Name="City" Type="nvarchar" MaxLength="400" />
+          <Property Name="ContactNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Username" Type="nvarchar" MaxLength="400" />
+          <Property Name="Password" Type="nvarchar" MaxLength="500" />
+          <Property Name="RoleAssign" Type="nvarchar" MaxLength="400" />
+          <Property Name="Status" Type="nvarchar" MaxLength="100" />
+          <Property Name="Image" Type="varbinary(max)" />
+          <Property Name="Loginstatus" Type="int" />
+          <Property Name="Token" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="VENDOR_MSTR">
+          <Key>
+            <PropertyRef Name="Vendor_Id" />
+          </Key>
+          <Property Name="Vendor_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VendorName" Type="nvarchar" MaxLength="1000" />
+          <Property Name="VendorAddress" Type="nvarchar" MaxLength="2000" />
+          <Property Name="City" Type="nvarchar" MaxLength="400" />
+          <Property Name="State" Type="nvarchar" MaxLength="100" />
+          <Property Name="PANNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="GISTINNo" Type="nvarchar" MaxLength="200" />
+          <Property Name="VendorMasterCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="ContactNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="Status" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FunctionCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="ObjectCode" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_ACCOUNTPOSTING_CHARTOFACCOUNT">
+          <End Role="CHARTOFACCOUNT" Type="Self.CHARTOFACCOUNT" Multiplicity="1" />
+          <End Role="ACCOUNTPOSTING" Type="Self.ACCOUNTPOSTING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CHARTOFACCOUNT">
+              <PropertyRef Name="Acc_Id" />
+            </Principal>
+            <Dependent Role="ACCOUNTPOSTING">
+              <PropertyRef Name="Acc_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ACCOUNTPOSTING_FORM_DETAILS">
+          <End Role="FORM_DETAILS" Type="Self.FORM_DETAILS" Multiplicity="1" />
+          <End Role="ACCOUNTPOSTING" Type="Self.ACCOUNTPOSTING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FORM_DETAILS">
+              <PropertyRef Name="Form_Id" />
+            </Principal>
+            <Dependent Role="ACCOUNTPOSTING">
+              <PropertyRef Name="Form_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BILL_INWARD_FORM_DETAILS">
+          <End Role="FORM_DETAILS" Type="Self.FORM_DETAILS" Multiplicity="0..1" />
+          <End Role="BILL_INWARD" Type="Self.BILL_INWARD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FORM_DETAILS">
+              <PropertyRef Name="Form_Id" />
+            </Principal>
+            <Dependent Role="BILL_INWARD">
+              <PropertyRef Name="Form_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD">
+          <End Role="BILL_INWARD" Type="Self.BILL_INWARD" Multiplicity="1" />
+          <End Role="BILL_INWARD_PARTICULARDETAILS" Type="Self.BILL_INWARD_PARTICULARDETAILS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BILL_INWARD">
+              <PropertyRef Name="Bill_Id" />
+            </Principal>
+            <Dependent Role="BILL_INWARD_PARTICULARDETAILS">
+              <PropertyRef Name="Bill_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CHARTOFACCOUNT_ACCOUNT_TYPE">
+          <End Role="ACCOUNT_TYPE" Type="Self.ACCOUNT_TYPE" Multiplicity="1" />
+          <End Role="CHARTOFACCOUNT" Type="Self.CHARTOFACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ACCOUNT_TYPE">
+              <PropertyRef Name="AccTypeId" />
+            </Principal>
+            <Dependent Role="CHARTOFACCOUNT">
+              <PropertyRef Name="AccTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER">
+          <End Role="FORM64_PAYMENTVOUCHER" Type="Self.FORM64_PAYMENTVOUCHER" Multiplicity="0..1" />
+          <End Role="FORM64_PARTICULARDETAILS" Type="Self.FORM64_PARTICULARDETAILS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FORM64_PAYMENTVOUCHER">
+              <PropertyRef Name="Form64_Id" />
+            </Principal>
+            <Dependent Role="FORM64_PARTICULARDETAILS">
+              <PropertyRef Name="Form64_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="waroraModelStoreContainer">
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="council" store:Type="Tables" />
+          <EntitySet Name="ACCOUNT_SUBTYPE" EntityType="Self.ACCOUNT_SUBTYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ACCOUNT_TYPE" EntityType="Self.ACCOUNT_TYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ACCOUNTPOSTING" EntityType="Self.ACCOUNTPOSTING" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BANK_MSTR" EntityType="Self.BANK_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BILL_INWARD" EntityType="Self.BILL_INWARD" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BILL_INWARD_PARTICULARDETAILS" EntityType="Self.BILL_INWARD_PARTICULARDETAILS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BRANCH_MSTR" EntityType="Self.BRANCH_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CHARTOFACCOUNT" EntityType="Self.CHARTOFACCOUNT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="COMPANY_MSTR" EntityType="Self.COMPANY_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="COMPANYDIRECTOR_MSTR" EntityType="Self.COMPANYDIRECTOR_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DEPARTMENT_MASTER" EntityType="Self.DEPARTMENT_MASTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DOCUMENT_TYPE" EntityType="Self.DOCUMENT_TYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM_DETAILS" EntityType="Self.FORM_DETAILS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM12_WO_REGISTER" EntityType="Self.FORM12_WO_REGISTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM64_DEDUCTION" EntityType="Self.FORM64_DEDUCTION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM64_PARTICULARDETAILS" EntityType="Self.FORM64_PARTICULARDETAILS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM64_PAYMENTVOUCHER" EntityType="Self.FORM64_PAYMENTVOUCHER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM84_DETAIL_ESTIMATE" EntityType="Self.FORM84_DETAIL_ESTIMATE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FORM84_PARTICULARDETAILS" EntityType="Self.FORM84_PARTICULARDETAILS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FUNCTIONCODE" EntityType="Self.FUNCTIONCODE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JOURNALVOUCHER" EntityType="Self.JOURNALVOUCHER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OBJECTCODE" EntityType="Self.OBJECTCODE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OPENING_BALANCE" EntityType="Self.OPENING_BALANCE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROLE_MSTR" EntityType="Self.ROLE_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SESSION_MSTR" EntityType="Self.SESSION_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USER_MSTR" EntityType="Self.USER_MSTR" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VENDOR_MSTR" EntityType="Self.VENDOR_MSTR" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ACCOUNTPOSTING_CHARTOFACCOUNT" Association="Self.FK_ACCOUNTPOSTING_CHARTOFACCOUNT">
+            <End Role="CHARTOFACCOUNT" EntitySet="CHARTOFACCOUNT" />
+            <End Role="ACCOUNTPOSTING" EntitySet="ACCOUNTPOSTING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ACCOUNTPOSTING_FORM_DETAILS" Association="Self.FK_ACCOUNTPOSTING_FORM_DETAILS">
+            <End Role="FORM_DETAILS" EntitySet="FORM_DETAILS" />
+            <End Role="ACCOUNTPOSTING" EntitySet="ACCOUNTPOSTING" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BILL_INWARD_FORM_DETAILS" Association="Self.FK_BILL_INWARD_FORM_DETAILS">
+            <End Role="FORM_DETAILS" EntitySet="FORM_DETAILS" />
+            <End Role="BILL_INWARD" EntitySet="BILL_INWARD" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD" Association="Self.FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD">
+            <End Role="BILL_INWARD" EntitySet="BILL_INWARD" />
+            <End Role="BILL_INWARD_PARTICULARDETAILS" EntitySet="BILL_INWARD_PARTICULARDETAILS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CHARTOFACCOUNT_ACCOUNT_TYPE" Association="Self.FK_CHARTOFACCOUNT_ACCOUNT_TYPE">
+            <End Role="ACCOUNT_TYPE" EntitySet="ACCOUNT_TYPE" />
+            <End Role="CHARTOFACCOUNT" EntitySet="CHARTOFACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER" Association="Self.FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER">
+            <End Role="FORM64_PAYMENTVOUCHER" EntitySet="FORM64_PAYMENTVOUCHER" />
+            <End Role="FORM64_PARTICULARDETAILS" EntitySet="FORM64_PARTICULARDETAILS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="waroraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="User_ID" />
+          </Key>
+          <Property Name="User_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Session_key" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ACCOUNT_SUBTYPE">
+          <Key>
+            <PropertyRef Name="Acc_subtype_Id" />
+          </Key>
+          <Property Name="Acc_subtype_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccTypeId" Type="Int32" Nullable="false" />
+          <Property Name="NameSubType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ACCOUNT_TYPE">
+          <Key>
+            <PropertyRef Name="AccTypeId" />
+          </Key>
+          <Property Name="AccTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountType" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CHARTOFACCOUNTs" Relationship="Self.FK_CHARTOFACCOUNT_ACCOUNT_TYPE" FromRole="ACCOUNT_TYPE" ToRole="CHARTOFACCOUNT" />
+        </EntityType>
+        <EntityType Name="ACCOUNTPOSTING">
+          <Key>
+            <PropertyRef Name="Accountposting_Id" />
+          </Key>
+          <Property Name="Accountposting_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form_id" Type="Int32" Nullable="false" />
+          <Property Name="Acc_id" Type="Int32" Nullable="false" />
+          <Property Name="PostingDate" Type="DateTime" Precision="3" />
+          <Property Name="Accountposting1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="RefDocDetails" Type="Int32" />
+          <Property Name="Acc_subtype_Id" Type="Int32" />
+          <Property Name="RefParticularDetail" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CHARTOFACCOUNT" Relationship="Self.FK_ACCOUNTPOSTING_CHARTOFACCOUNT" FromRole="ACCOUNTPOSTING" ToRole="CHARTOFACCOUNT" />
+          <NavigationProperty Name="FORM_DETAILS" Relationship="Self.FK_ACCOUNTPOSTING_FORM_DETAILS" FromRole="ACCOUNTPOSTING" ToRole="FORM_DETAILS" />
+        </EntityType>
+        <EntityType Name="BANK_MSTR">
+          <Key>
+            <PropertyRef Name="Bank_Id" />
+          </Key>
+          <Property Name="Bank_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BankName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="BankAddress" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="IFSC_Code" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="AccountNumber" Type="Int32" />
+          <Property Name="Branch" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="ContactNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BankMasterCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="BILL_INWARD">
+          <Key>
+            <PropertyRef Name="Bill_Id" />
+          </Key>
+          <Property Name="Bill_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form_id" Type="Int32" />
+          <Property Name="BillDate" Type="DateTime" Precision="3" />
+          <Property Name="Attachment" Type="Binary" MaxLength="200" FixedLength="false" />
+          <Property Name="VendorName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="DeptName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PSNNO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Work_Order_NO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GrossAmount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalTaxAmount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NetAmountPayble" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Status" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="FORM_DETAILS" Relationship="Self.FK_BILL_INWARD_FORM_DETAILS" FromRole="BILL_INWARD" ToRole="FORM_DETAILS" />
+          <NavigationProperty Name="BILL_INWARD_PARTICULARDETAILS" Relationship="Self.FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD" FromRole="BILL_INWARD" ToRole="BILL_INWARD_PARTICULARDETAILS" />
+        </EntityType>
+        <EntityType Name="BILL_INWARD_PARTICULARDETAILS">
+          <Key>
+            <PropertyRef Name="Bill_PD_Id" />
+          </Key>
+          <Property Name="Bill_PD_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Bill_Id" Type="Int32" Nullable="false" />
+          <Property Name="AccountCode" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Narration" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Quanity" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rate" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Unit" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Percentage" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="BILL_INWARD" Relationship="Self.FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD" FromRole="BILL_INWARD_PARTICULARDETAILS" ToRole="BILL_INWARD" />
+        </EntityType>
+        <EntityType Name="BRANCH_MSTR">
+          <Key>
+            <PropertyRef Name="Branch_Id" />
+          </Key>
+          <Property Name="Branch_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Branch_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BranchCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CHARTOFACCOUNT">
+          <Key>
+            <PropertyRef Name="Acc_Id" />
+          </Key>
+          <Property Name="Acc_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ACC_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Narration" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="AccountType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="AccTypeId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="subgroup" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GroupName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Acc_subtype_Id" Type="Int32" />
+          <Property Name="FunctionCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ObjectCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FunctionCodeDescription" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="ObjectCodeDescription" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ACCOUNT_TYPE" Relationship="Self.FK_CHARTOFACCOUNT_ACCOUNT_TYPE" FromRole="CHARTOFACCOUNT" ToRole="ACCOUNT_TYPE" />
+          <NavigationProperty Name="ACCOUNTPOSTINGs" Relationship="Self.FK_ACCOUNTPOSTING_CHARTOFACCOUNT" FromRole="CHARTOFACCOUNT" ToRole="ACCOUNTPOSTING" />
+        </EntityType>
+        <EntityType Name="COMPANY_MSTR">
+          <Key>
+            <PropertyRef Name="CompanyId" />
+          </Key>
+          <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Comp_code" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Company_Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Pincode" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="States" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EMail" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Mobile_number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Pancard" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GST_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Company_Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Company_Formation_Date" Type="DateTime" Precision="3" />
+          <Property Name="CIN_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ValidTo" Type="DateTime" Precision="3" />
+          <Property Name="Validfrom" Type="DateTime" Precision="3" />
+          <Property Name="No_User_Allowed" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Role_assign" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="COMPANYDIRECTOR_MSTR">
+          <Key>
+            <PropertyRef Name="Director_Id" />
+          </Key>
+          <Property Name="Director_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CompanyId" Type="Int32" />
+          <Property Name="Director_Propiertor" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="PAN_DIR" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DIN_Number" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Contact" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="DEPARTMENT_MASTER">
+          <Key>
+            <PropertyRef Name="DepId" />
+          </Key>
+          <Property Name="DepId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="DepartmentName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="AuthorizePersonName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="DOCUMENT_TYPE">
+          <Key>
+            <PropertyRef Name="DocTypeId" />
+          </Key>
+          <Property Name="DocTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Document_Typename" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FORM_DETAILS">
+          <Key>
+            <PropertyRef Name="Form_Id" />
+          </Key>
+          <Property Name="Form_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DocTypeId" Type="Int32" />
+          <NavigationProperty Name="ACCOUNTPOSTINGs" Relationship="Self.FK_ACCOUNTPOSTING_FORM_DETAILS" FromRole="FORM_DETAILS" ToRole="ACCOUNTPOSTING" />
+          <NavigationProperty Name="BILL_INWARD" Relationship="Self.FK_BILL_INWARD_FORM_DETAILS" FromRole="FORM_DETAILS" ToRole="BILL_INWARD" />
+        </EntityType>
+        <EntityType Name="FORM12_WO_REGISTER">
+          <Key>
+            <PropertyRef Name="Form12_Id" />
+          </Key>
+          <Property Name="Form12_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Work_Order_No" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Ref_WIP_Register" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Estimated_Cost" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Tender_Cost" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Sanctioned_Tender_Rates" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Planned_completion_date" Type="DateTime" Precision="3" />
+          <Property Name="Total_Work_value" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EMD_Receipt_No" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EMD_Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SD_Receipt_No" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Actual_date_completion" Type="DateTime" Precision="3" />
+          <Property Name="Completion_certificate_No" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Signature" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Sanctioned_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="VendorNameId" Type="Int32" />
+          <Property Name="SD_Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Status" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="FORM64_DEDUCTION">
+          <Key>
+            <PropertyRef Name="FORM64_DEDUCTIONID" />
+          </Key>
+          <Property Name="FORM64_DEDUCTIONID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form64_Id" Type="Int32" />
+          <Property Name="Narration" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Accountcode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FORM64_PARTICULARDETAILS">
+          <Key>
+            <PropertyRef Name="Form64_ParticularDetailID" />
+          </Key>
+          <Property Name="Form64_ParticularDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form64_Id" Type="Int32" />
+          <Property Name="Bill_PD_Id" Type="Int32" />
+          <Property Name="Narration" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Accountcode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Qty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Rate" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Unit" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Percentage" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="FORM64_PAYMENTVOUCHER" Relationship="Self.FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER" FromRole="FORM64_PARTICULARDETAILS" ToRole="FORM64_PAYMENTVOUCHER" />
+        </EntityType>
+        <EntityType Name="FORM64_PAYMENTVOUCHER">
+          <Key>
+            <PropertyRef Name="Form64_Id" />
+          </Key>
+          <Property Name="Form64_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form_id" Type="Int32" />
+          <Property Name="Bill_Id" Type="Int32" />
+          <Property Name="DepartmentName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Bill_No" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Bill_Details" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="NamePayeeVendorContractor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Form12_Id" Type="Int32" />
+          <Property Name="First_Advance" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Running_Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Final_Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="GrossAmtPayable" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalDeduction" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Net_AmtPayable" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Amt_inwords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Budget_provision" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Budget_code" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Balance" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="BillPaid_tillnow" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Measurementbookreference" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="No_of_stock" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="current_billamt" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Book_No" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="passed_paymentamt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="payment_inwords" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Work_Order_No" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Bank" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ChequeNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PSN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="FORM64_PARTICULARDETAILS" Relationship="Self.FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER" FromRole="FORM64_PAYMENTVOUCHER" ToRole="FORM64_PARTICULARDETAILS" />
+        </EntityType>
+        <EntityType Name="FORM84_DETAIL_ESTIMATE">
+          <Key>
+            <PropertyRef Name="Form84_ID" />
+          </Key>
+          <Property Name="Form84_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form84_Year" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="TotalActual_last_year" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalActual_second_last_year" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalActual_third_last_year" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalBudget_current8_month" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalRemaining4_month" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalBudget_Estimate" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Remark_variation_difference" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="FORM84_PARTICULARDETAILS">
+          <Key>
+            <PropertyRef Name="Form84_PDID" />
+          </Key>
+          <Property Name="Form84_PDID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Form84_ID" Type="Int32" />
+          <Property Name="Particulars" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Accountcode" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="Actual_last_year" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Actual_second_last_year" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Actual_third_last_year" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Budget_current8_month" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Remaining4_month" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Budget_Estimate" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Remark_variation_difference" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Signature_image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="MainAccount" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="SubAccount" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="AccountCategory" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Session" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Percentage" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="FUNCTIONCODE">
+          <Key>
+            <PropertyRef Name="S_No" />
+          </Key>
+          <Property Name="S_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FunctionCode1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FunctionName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SubFunctionDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="JOURNALVOUCHER">
+          <Key>
+            <PropertyRef Name="JV_Id" />
+          </Key>
+          <Property Name="JV_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="JVDate" Type="DateTime" Precision="3" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AccountType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Narration" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Acc_subtype_Id" Type="Int32" />
+          <Property Name="VoucherNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="OBJECTCODE">
+          <Key>
+            <PropertyRef Name="S_No" />
+          </Key>
+          <Property Name="S_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Objectcode1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ObjectDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Majorhead" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Minorhead" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DetailedHead" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Accounttype" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="OPENING_BALANCE">
+          <Key>
+            <PropertyRef Name="OPBID" />
+          </Key>
+          <Property Name="OPBID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YearId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CreationDate" Type="DateTime" Precision="3" />
+          <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TotalDr" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalCr" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="ROLE_MSTR">
+          <Key>
+            <PropertyRef Name="Role_Id" />
+          </Key>
+          <Property Name="Role_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Role_Dscr" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SESSION_MSTR">
+          <Key>
+            <PropertyRef Name="YEARID" />
+          </Key>
+          <Property Name="YEARID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Session" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="EndDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="USER_MSTR">
+          <Key>
+            <PropertyRef Name="User_Id" />
+          </Key>
+          <Property Name="User_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="ContactNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Username" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RoleAssign" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Loginstatus" Type="Int32" />
+          <Property Name="Token" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VENDOR_MSTR">
+          <Key>
+            <PropertyRef Name="Vendor_Id" />
+          </Key>
+          <Property Name="Vendor_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VendorName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="VendorAddress" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PANNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="GISTINNo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="VendorMasterCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="ContactNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FunctionCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ObjectCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_CHARTOFACCOUNT_ACCOUNT_TYPE">
+          <End Role="ACCOUNT_TYPE" Type="Self.ACCOUNT_TYPE" Multiplicity="1" />
+          <End Role="CHARTOFACCOUNT" Type="Self.CHARTOFACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ACCOUNT_TYPE">
+              <PropertyRef Name="AccTypeId" />
+            </Principal>
+            <Dependent Role="CHARTOFACCOUNT">
+              <PropertyRef Name="AccTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ACCOUNTPOSTING_CHARTOFACCOUNT">
+          <End Role="CHARTOFACCOUNT" Type="Self.CHARTOFACCOUNT" Multiplicity="1" />
+          <End Role="ACCOUNTPOSTING" Type="Self.ACCOUNTPOSTING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CHARTOFACCOUNT">
+              <PropertyRef Name="Acc_Id" />
+            </Principal>
+            <Dependent Role="ACCOUNTPOSTING">
+              <PropertyRef Name="Acc_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ACCOUNTPOSTING_FORM_DETAILS">
+          <End Role="FORM_DETAILS" Type="Self.FORM_DETAILS" Multiplicity="1" />
+          <End Role="ACCOUNTPOSTING" Type="Self.ACCOUNTPOSTING" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FORM_DETAILS">
+              <PropertyRef Name="Form_Id" />
+            </Principal>
+            <Dependent Role="ACCOUNTPOSTING">
+              <PropertyRef Name="Form_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BILL_INWARD_FORM_DETAILS">
+          <End Role="FORM_DETAILS" Type="Self.FORM_DETAILS" Multiplicity="0..1" />
+          <End Role="BILL_INWARD" Type="Self.BILL_INWARD" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FORM_DETAILS">
+              <PropertyRef Name="Form_Id" />
+            </Principal>
+            <Dependent Role="BILL_INWARD">
+              <PropertyRef Name="Form_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD">
+          <End Role="BILL_INWARD" Type="Self.BILL_INWARD" Multiplicity="1" />
+          <End Role="BILL_INWARD_PARTICULARDETAILS" Type="Self.BILL_INWARD_PARTICULARDETAILS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BILL_INWARD">
+              <PropertyRef Name="Bill_Id" />
+            </Principal>
+            <Dependent Role="BILL_INWARD_PARTICULARDETAILS">
+              <PropertyRef Name="Bill_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER">
+          <End Role="FORM64_PAYMENTVOUCHER" Type="Self.FORM64_PAYMENTVOUCHER" Multiplicity="0..1" />
+          <End Role="FORM64_PARTICULARDETAILS" Type="Self.FORM64_PARTICULARDETAILS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FORM64_PAYMENTVOUCHER">
+              <PropertyRef Name="Form64_Id" />
+            </Principal>
+            <Dependent Role="FORM64_PARTICULARDETAILS">
+              <PropertyRef Name="Form64_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="waroraEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Logins" EntityType="Self.Login" />
+          <EntitySet Name="ACCOUNT_SUBTYPE" EntityType="Self.ACCOUNT_SUBTYPE" />
+          <EntitySet Name="ACCOUNT_TYPE" EntityType="Self.ACCOUNT_TYPE" />
+          <EntitySet Name="ACCOUNTPOSTINGs" EntityType="Self.ACCOUNTPOSTING" />
+          <EntitySet Name="BANK_MSTR" EntityType="Self.BANK_MSTR" />
+          <EntitySet Name="BILL_INWARD" EntityType="Self.BILL_INWARD" />
+          <EntitySet Name="BILL_INWARD_PARTICULARDETAILS" EntityType="Self.BILL_INWARD_PARTICULARDETAILS" />
+          <EntitySet Name="BRANCH_MSTR" EntityType="Self.BRANCH_MSTR" />
+          <EntitySet Name="CHARTOFACCOUNTs" EntityType="Self.CHARTOFACCOUNT" />
+          <EntitySet Name="COMPANY_MSTR" EntityType="Self.COMPANY_MSTR" />
+          <EntitySet Name="COMPANYDIRECTOR_MSTR" EntityType="Self.COMPANYDIRECTOR_MSTR" />
+          <EntitySet Name="DEPARTMENT_MASTER" EntityType="Self.DEPARTMENT_MASTER" />
+          <EntitySet Name="DOCUMENT_TYPE" EntityType="Self.DOCUMENT_TYPE" />
+          <EntitySet Name="FORM_DETAILS" EntityType="Self.FORM_DETAILS" />
+          <EntitySet Name="FORM12_WO_REGISTER" EntityType="Self.FORM12_WO_REGISTER" />
+          <EntitySet Name="FORM64_DEDUCTION" EntityType="Self.FORM64_DEDUCTION" />
+          <EntitySet Name="FORM64_PARTICULARDETAILS" EntityType="Self.FORM64_PARTICULARDETAILS" />
+          <EntitySet Name="FORM64_PAYMENTVOUCHER" EntityType="Self.FORM64_PAYMENTVOUCHER" />
+          <EntitySet Name="FORM84_DETAIL_ESTIMATE" EntityType="Self.FORM84_DETAIL_ESTIMATE" />
+          <EntitySet Name="FORM84_PARTICULARDETAILS" EntityType="Self.FORM84_PARTICULARDETAILS" />
+          <EntitySet Name="FUNCTIONCODEs" EntityType="Self.FUNCTIONCODE" />
+          <EntitySet Name="JOURNALVOUCHERs" EntityType="Self.JOURNALVOUCHER" />
+          <EntitySet Name="OBJECTCODEs" EntityType="Self.OBJECTCODE" />
+          <EntitySet Name="OPENING_BALANCE" EntityType="Self.OPENING_BALANCE" />
+          <EntitySet Name="ROLE_MSTR" EntityType="Self.ROLE_MSTR" />
+          <EntitySet Name="SESSION_MSTR" EntityType="Self.SESSION_MSTR" />
+          <EntitySet Name="USER_MSTR" EntityType="Self.USER_MSTR" />
+          <EntitySet Name="VENDOR_MSTR" EntityType="Self.VENDOR_MSTR" />
+          <AssociationSet Name="FK_CHARTOFACCOUNT_ACCOUNT_TYPE" Association="Self.FK_CHARTOFACCOUNT_ACCOUNT_TYPE">
+            <End Role="ACCOUNT_TYPE" EntitySet="ACCOUNT_TYPE" />
+            <End Role="CHARTOFACCOUNT" EntitySet="CHARTOFACCOUNTs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ACCOUNTPOSTING_CHARTOFACCOUNT" Association="Self.FK_ACCOUNTPOSTING_CHARTOFACCOUNT">
+            <End Role="CHARTOFACCOUNT" EntitySet="CHARTOFACCOUNTs" />
+            <End Role="ACCOUNTPOSTING" EntitySet="ACCOUNTPOSTINGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ACCOUNTPOSTING_FORM_DETAILS" Association="Self.FK_ACCOUNTPOSTING_FORM_DETAILS">
+            <End Role="FORM_DETAILS" EntitySet="FORM_DETAILS" />
+            <End Role="ACCOUNTPOSTING" EntitySet="ACCOUNTPOSTINGs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BILL_INWARD_FORM_DETAILS" Association="Self.FK_BILL_INWARD_FORM_DETAILS">
+            <End Role="FORM_DETAILS" EntitySet="FORM_DETAILS" />
+            <End Role="BILL_INWARD" EntitySet="BILL_INWARD" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD" Association="Self.FK_BILL_INWARD_PARTICULARDETAILS_BILLINWARD">
+            <End Role="BILL_INWARD" EntitySet="BILL_INWARD" />
+            <End Role="BILL_INWARD_PARTICULARDETAILS" EntitySet="BILL_INWARD_PARTICULARDETAILS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER" Association="Self.FK_FORM64_PARTICULARDETAILS_FORM64_PAYMENTVOUCHER">
+            <End Role="FORM64_PAYMENTVOUCHER" EntitySet="FORM64_PAYMENTVOUCHER" />
+            <End Role="FORM64_PARTICULARDETAILS" EntitySet="FORM64_PARTICULARDETAILS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="waroraModelStoreContainer" CdmEntityContainer="waroraEntities">
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="waroraModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Session_key" ColumnName="Session_key" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ACCOUNT_SUBTYPE">
+            <EntityTypeMapping TypeName="waroraModel.ACCOUNT_SUBTYPE">
+              <MappingFragment StoreEntitySet="ACCOUNT_SUBTYPE">
+                <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+                <ScalarProperty Name="AccTypeId" ColumnName="AccTypeId" />
+                <ScalarProperty Name="NameSubType" ColumnName="NameSubType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ACCOUNT_TYPE">
+            <EntityTypeMapping TypeName="waroraModel.ACCOUNT_TYPE">
+              <MappingFragment StoreEntitySet="ACCOUNT_TYPE">
+                <ScalarProperty Name="AccTypeId" ColumnName="AccTypeId" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ACCOUNTPOSTINGs">
+            <EntityTypeMapping TypeName="waroraModel.ACCOUNTPOSTING">
+              <MappingFragment StoreEntitySet="ACCOUNTPOSTING">
+                <ScalarProperty Name="Accountposting_Id" ColumnName="Accountposting_Id" />
+                <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+                <ScalarProperty Name="Acc_id" ColumnName="Acc_id" />
+                <ScalarProperty Name="PostingDate" ColumnName="PostingDate" />
+                <ScalarProperty Name="Accountposting1" ColumnName="Accountposting" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="RefDocDetails" ColumnName="RefDocDetails" />
+                <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+                <ScalarProperty Name="RefParticularDetail" ColumnName="RefParticularDetail" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BANK_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.BANK_MSTR">
+              <MappingFragment StoreEntitySet="BANK_MSTR">
+                <ScalarProperty Name="Bank_Id" ColumnName="Bank_Id" />
+                <ScalarProperty Name="BankName" ColumnName="BankName" />
+                <ScalarProperty Name="BankAddress" ColumnName="BankAddress" />
+                <ScalarProperty Name="IFSC_Code" ColumnName="IFSC_Code" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="BankMasterCode" ColumnName="BankMasterCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BILL_INWARD">
+            <EntityTypeMapping TypeName="waroraModel.BILL_INWARD">
+              <MappingFragment StoreEntitySet="BILL_INWARD">
+                <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+                <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+                <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+                <ScalarProperty Name="Attachment" ColumnName="Attachment" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+                <ScalarProperty Name="PSNNO" ColumnName="PSNNO" />
+                <ScalarProperty Name="Work_Order_NO" ColumnName="Work_Order_NO" />
+                <ScalarProperty Name="GrossAmount" ColumnName="GrossAmount" />
+                <ScalarProperty Name="TotalTaxAmount" ColumnName="TotalTaxAmount" />
+                <ScalarProperty Name="NetAmountPayble" ColumnName="NetAmountPayble" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BILL_INWARD_PARTICULARDETAILS">
+            <EntityTypeMapping TypeName="waroraModel.BILL_INWARD_PARTICULARDETAILS">
+              <MappingFragment StoreEntitySet="BILL_INWARD_PARTICULARDETAILS">
+                <ScalarProperty Name="Bill_PD_Id" ColumnName="Bill_PD_Id" />
+                <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+                <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+                <ScalarProperty Name="Narration" ColumnName="Narration" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Quanity" ColumnName="Quanity" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BRANCH_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.BRANCH_MSTR">
+              <MappingFragment StoreEntitySet="BRANCH_MSTR">
+                <ScalarProperty Name="Branch_Id" ColumnName="Branch_Id" />
+                <ScalarProperty Name="Branch_Name" ColumnName="Branch_Name" />
+                <ScalarProperty Name="BranchCode" ColumnName="BranchCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CHARTOFACCOUNTs">
+            <EntityTypeMapping TypeName="waroraModel.CHARTOFACCOUNT">
+              <MappingFragment StoreEntitySet="CHARTOFACCOUNT">
+                <ScalarProperty Name="Acc_Id" ColumnName="Acc_Id" />
+                <ScalarProperty Name="ACC_Code" ColumnName="ACC_Code" />
+                <ScalarProperty Name="Narration" ColumnName="Narration" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="AccTypeId" ColumnName="AccTypeId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="subgroup" ColumnName="subgroup" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+                <ScalarProperty Name="FunctionCode" ColumnName="FunctionCode" />
+                <ScalarProperty Name="ObjectCode" ColumnName="ObjectCode" />
+                <ScalarProperty Name="FunctionCodeDescription" ColumnName="FunctionCodeDescription" />
+                <ScalarProperty Name="ObjectCodeDescription" ColumnName="ObjectCodeDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COMPANY_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.COMPANY_MSTR">
+              <MappingFragment StoreEntitySet="COMPANY_MSTR">
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Comp_code" ColumnName="Comp_code" />
+                <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="States" ColumnName="States" />
+                <ScalarProperty Name="EMail" ColumnName="EMail" />
+                <ScalarProperty Name="Mobile_number" ColumnName="Mobile_number" />
+                <ScalarProperty Name="Pancard" ColumnName="Pancard" />
+                <ScalarProperty Name="GST_Number" ColumnName="GST_Number" />
+                <ScalarProperty Name="Company_Type" ColumnName="Company_Type" />
+                <ScalarProperty Name="Company_Formation_Date" ColumnName="Company_Formation_Date" />
+                <ScalarProperty Name="CIN_Number" ColumnName="CIN_Number" />
+                <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+                <ScalarProperty Name="Validfrom" ColumnName="Validfrom" />
+                <ScalarProperty Name="No_User_Allowed" ColumnName="No_User_Allowed" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Role_assign" ColumnName="Role_assign" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="COMPANYDIRECTOR_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.COMPANYDIRECTOR_MSTR">
+              <MappingFragment StoreEntitySet="COMPANYDIRECTOR_MSTR">
+                <ScalarProperty Name="Director_Id" ColumnName="Director_Id" />
+                <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+                <ScalarProperty Name="Director_Propiertor" ColumnName="Director_Propiertor" />
+                <ScalarProperty Name="PAN_DIR" ColumnName="PAN_DIR" />
+                <ScalarProperty Name="DIN_Number" ColumnName="DIN_Number" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DEPARTMENT_MASTER">
+            <EntityTypeMapping TypeName="waroraModel.DEPARTMENT_MASTER">
+              <MappingFragment StoreEntitySet="DEPARTMENT_MASTER">
+                <ScalarProperty Name="DepId" ColumnName="DepId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="AuthorizePersonName" ColumnName="AuthorizePersonName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DOCUMENT_TYPE">
+            <EntityTypeMapping TypeName="waroraModel.DOCUMENT_TYPE">
+              <MappingFragment StoreEntitySet="DOCUMENT_TYPE">
+                <ScalarProperty Name="DocTypeId" ColumnName="DocTypeId" />
+                <ScalarProperty Name="Document_Typename" ColumnName="Document_Typename" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM_DETAILS">
+            <EntityTypeMapping TypeName="waroraModel.FORM_DETAILS">
+              <MappingFragment StoreEntitySet="FORM_DETAILS">
+                <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+                <ScalarProperty Name="Form_Name" ColumnName="Form_Name" />
+                <ScalarProperty Name="DocTypeId" ColumnName="DocTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM12_WO_REGISTER">
+            <EntityTypeMapping TypeName="waroraModel.FORM12_WO_REGISTER">
+              <MappingFragment StoreEntitySet="FORM12_WO_REGISTER">
+                <ScalarProperty Name="Form12_Id" ColumnName="Form12_Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+                <ScalarProperty Name="Work_Order_No" ColumnName="Work_Order_No" />
+                <ScalarProperty Name="Ref_WIP_Register" ColumnName="Ref_WIP_Register" />
+                <ScalarProperty Name="Estimated_Cost" ColumnName="Estimated_Cost" />
+                <ScalarProperty Name="Tender_Cost" ColumnName="Tender_Cost" />
+                <ScalarProperty Name="Sanctioned_Tender_Rates" ColumnName="Sanctioned_Tender_Rates" />
+                <ScalarProperty Name="Planned_completion_date" ColumnName="Planned_completion_date" />
+                <ScalarProperty Name="Total_Work_value" ColumnName="Total_Work_value" />
+                <ScalarProperty Name="EMD_Receipt_No" ColumnName="EMD_Receipt_No" />
+                <ScalarProperty Name="EMD_Amount" ColumnName="EMD_Amount" />
+                <ScalarProperty Name="SD_Receipt_No" ColumnName="SD_Receipt_No" />
+                <ScalarProperty Name="Actual_date_completion" ColumnName="Actual_date_completion" />
+                <ScalarProperty Name="Completion_certificate_No" ColumnName="Completion_certificate_No" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="Signature" ColumnName="Signature" />
+                <ScalarProperty Name="Sanctioned_Year" ColumnName="Sanctioned_Year" />
+                <ScalarProperty Name="VendorNameId" ColumnName="VendorNameId" />
+                <ScalarProperty Name="SD_Amount" ColumnName="SD_Amount" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM64_DEDUCTION">
+            <EntityTypeMapping TypeName="waroraModel.FORM64_DEDUCTION">
+              <MappingFragment StoreEntitySet="FORM64_DEDUCTION">
+                <ScalarProperty Name="FORM64_DEDUCTIONID" ColumnName="FORM64_DEDUCTIONID" />
+                <ScalarProperty Name="Form64_Id" ColumnName="Form64_Id" />
+                <ScalarProperty Name="Narration" ColumnName="Narration" />
+                <ScalarProperty Name="Accountcode" ColumnName="Accountcode" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM64_PARTICULARDETAILS">
+            <EntityTypeMapping TypeName="waroraModel.FORM64_PARTICULARDETAILS">
+              <MappingFragment StoreEntitySet="FORM64_PARTICULARDETAILS">
+                <ScalarProperty Name="Form64_ParticularDetailID" ColumnName="Form64_ParticularDetailID" />
+                <ScalarProperty Name="Form64_Id" ColumnName="Form64_Id" />
+                <ScalarProperty Name="Bill_PD_Id" ColumnName="Bill_PD_Id" />
+                <ScalarProperty Name="Narration" ColumnName="Narration" />
+                <ScalarProperty Name="Accountcode" ColumnName="Accountcode" />
+                <ScalarProperty Name="Qty" ColumnName="Qty" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="Unit" ColumnName="Unit" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM64_PAYMENTVOUCHER">
+            <EntityTypeMapping TypeName="waroraModel.FORM64_PAYMENTVOUCHER">
+              <MappingFragment StoreEntitySet="FORM64_PAYMENTVOUCHER">
+                <ScalarProperty Name="Form64_Id" ColumnName="Form64_Id" />
+                <ScalarProperty Name="Form_id" ColumnName="Form_id" />
+                <ScalarProperty Name="Bill_Id" ColumnName="Bill_Id" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Bill_No" ColumnName="Bill_No" />
+                <ScalarProperty Name="Bill_Details" ColumnName="Bill_Details" />
+                <ScalarProperty Name="NamePayeeVendorContractor" ColumnName="NamePayeeVendorContractor" />
+                <ScalarProperty Name="Form12_Id" ColumnName="Form12_Id" />
+                <ScalarProperty Name="First_Advance" ColumnName="First_Advance" />
+                <ScalarProperty Name="Running_Amount" ColumnName="Running_Amount" />
+                <ScalarProperty Name="Final_Amount" ColumnName="Final_Amount" />
+                <ScalarProperty Name="GrossAmtPayable" ColumnName="GrossAmtPayable" />
+                <ScalarProperty Name="TotalDeduction" ColumnName="TotalDeduction" />
+                <ScalarProperty Name="Net_AmtPayable" ColumnName="Net_AmtPayable" />
+                <ScalarProperty Name="Amt_inwords" ColumnName="Amt_inwords" />
+                <ScalarProperty Name="Budget_provision" ColumnName="Budget_provision" />
+                <ScalarProperty Name="Budget_code" ColumnName="Budget_code" />
+                <ScalarProperty Name="Balance" ColumnName="Balance" />
+                <ScalarProperty Name="BillPaid_tillnow" ColumnName="BillPaid_tillnow" />
+                <ScalarProperty Name="Measurementbookreference" ColumnName="Measurementbookreference" />
+                <ScalarProperty Name="No_of_stock" ColumnName="No_of_stock" />
+                <ScalarProperty Name="current_billamt" ColumnName="current_billamt" />
+                <ScalarProperty Name="Book_No" ColumnName="Book_No" />
+                <ScalarProperty Name="passed_paymentamt" ColumnName="passed_paymentamt" />
+                <ScalarProperty Name="payment_inwords" ColumnName="payment_inwords" />
+                <ScalarProperty Name="Work_Order_No" ColumnName="Work_Order_No" />
+                <ScalarProperty Name="Bank" ColumnName="Bank" />
+                <ScalarProperty Name="ChequeNo" ColumnName="ChequeNo" />
+                <ScalarProperty Name="PSN" ColumnName="PSN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM84_DETAIL_ESTIMATE">
+            <EntityTypeMapping TypeName="waroraModel.FORM84_DETAIL_ESTIMATE">
+              <MappingFragment StoreEntitySet="FORM84_DETAIL_ESTIMATE">
+                <ScalarProperty Name="Form84_ID" ColumnName="Form84_ID" />
+                <ScalarProperty Name="Form84_Year" ColumnName="Form84_Year" />
+                <ScalarProperty Name="TotalActual_last_year" ColumnName="TotalActual_last_year" />
+                <ScalarProperty Name="TotalActual_second_last_year" ColumnName="TotalActual_second_last_year" />
+                <ScalarProperty Name="TotalActual_third_last_year" ColumnName="TotalActual_third_last_year" />
+                <ScalarProperty Name="TotalBudget_current8_month" ColumnName="TotalBudget_current8_month" />
+                <ScalarProperty Name="TotalRemaining4_month" ColumnName="TotalRemaining4_month" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="TotalBudget_Estimate" ColumnName="TotalBudget_Estimate" />
+                <ScalarProperty Name="Remark_variation_difference" ColumnName="Remark_variation_difference" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORM84_PARTICULARDETAILS">
+            <EntityTypeMapping TypeName="waroraModel.FORM84_PARTICULARDETAILS">
+              <MappingFragment StoreEntitySet="FORM84_PARTICULARDETAILS">
+                <ScalarProperty Name="Form84_PDID" ColumnName="Form84_PDID" />
+                <ScalarProperty Name="Form84_ID" ColumnName="Form84_ID" />
+                <ScalarProperty Name="Particulars" ColumnName="Particulars" />
+                <ScalarProperty Name="Accountcode" ColumnName="Accountcode" />
+                <ScalarProperty Name="Actual_last_year" ColumnName="Actual_last_year" />
+                <ScalarProperty Name="Actual_second_last_year" ColumnName="Actual_second_last_year" />
+                <ScalarProperty Name="Actual_third_last_year" ColumnName="Actual_third_last_year" />
+                <ScalarProperty Name="Budget_current8_month" ColumnName="Budget_current8_month" />
+                <ScalarProperty Name="Remaining4_month" ColumnName="Remaining4_month" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Budget_Estimate" ColumnName="Budget_Estimate" />
+                <ScalarProperty Name="Remark_variation_difference" ColumnName="Remark_variation_difference" />
+                <ScalarProperty Name="Signature_image" ColumnName="Signature_image" />
+                <ScalarProperty Name="MainAccount" ColumnName="MainAccount" />
+                <ScalarProperty Name="SubAccount" ColumnName="SubAccount" />
+                <ScalarProperty Name="AccountCategory" ColumnName="AccountCategory" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Session" ColumnName="Session" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FUNCTIONCODEs">
+            <EntityTypeMapping TypeName="waroraModel.FUNCTIONCODE">
+              <MappingFragment StoreEntitySet="FUNCTIONCODE">
+                <ScalarProperty Name="S_No" ColumnName="S.No" />
+                <ScalarProperty Name="FunctionCode1" ColumnName="FunctionCode" />
+                <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+                <ScalarProperty Name="SubFunctionDescription" ColumnName="SubFunctionDescription" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JOURNALVOUCHERs">
+            <EntityTypeMapping TypeName="waroraModel.JOURNALVOUCHER">
+              <MappingFragment StoreEntitySet="JOURNALVOUCHER">
+                <ScalarProperty Name="JV_Id" ColumnName="JV_Id" />
+                <ScalarProperty Name="AccountCode" ColumnName="AccountCode" />
+                <ScalarProperty Name="JVDate" ColumnName="JVDate" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+                <ScalarProperty Name="Narration" ColumnName="Narration" />
+                <ScalarProperty Name="Acc_subtype_Id" ColumnName="Acc_subtype_Id" />
+                <ScalarProperty Name="VoucherNo" ColumnName="VoucherNo" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OBJECTCODEs">
+            <EntityTypeMapping TypeName="waroraModel.OBJECTCODE">
+              <MappingFragment StoreEntitySet="OBJECTCODE">
+                <ScalarProperty Name="S_No" ColumnName="S.No" />
+                <ScalarProperty Name="Objectcode1" ColumnName="Objectcode" />
+                <ScalarProperty Name="ObjectDescription" ColumnName="ObjectDescription" />
+                <ScalarProperty Name="Majorhead" ColumnName="Majorhead" />
+                <ScalarProperty Name="Minorhead" ColumnName="Minorhead" />
+                <ScalarProperty Name="DetailedHead" ColumnName="DetailedHead" />
+                <ScalarProperty Name="Accounttype" ColumnName="Accounttype" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OPENING_BALANCE">
+            <EntityTypeMapping TypeName="waroraModel.OPENING_BALANCE">
+              <MappingFragment StoreEntitySet="OPENING_BALANCE">
+                <ScalarProperty Name="OPBID" ColumnName="OPBID" />
+                <ScalarProperty Name="YearId" ColumnName="YearId" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="TotalDr" ColumnName="TotalDr" />
+                <ScalarProperty Name="TotalCr" ColumnName="TotalCr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLE_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.ROLE_MSTR">
+              <MappingFragment StoreEntitySet="ROLE_MSTR">
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="Role_Dscr" ColumnName="Role_Dscr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SESSION_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.SESSION_MSTR">
+              <MappingFragment StoreEntitySet="SESSION_MSTR">
+                <ScalarProperty Name="YEARID" ColumnName="YEARID" />
+                <ScalarProperty Name="Session" ColumnName="Session" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USER_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.USER_MSTR">
+              <MappingFragment StoreEntitySet="USER_MSTR">
+                <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="RoleAssign" ColumnName="RoleAssign" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Loginstatus" ColumnName="Loginstatus" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VENDOR_MSTR">
+            <EntityTypeMapping TypeName="waroraModel.VENDOR_MSTR">
+              <MappingFragment StoreEntitySet="VENDOR_MSTR">
+                <ScalarProperty Name="Vendor_Id" ColumnName="Vendor_Id" />
+                <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+                <ScalarProperty Name="VendorAddress" ColumnName="VendorAddress" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="PANNo" ColumnName="PANNo" />
+                <ScalarProperty Name="GISTINNo" ColumnName="GISTINNo" />
+                <ScalarProperty Name="VendorMasterCode" ColumnName="VendorMasterCode" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="FunctionCode" ColumnName="FunctionCode" />
+                <ScalarProperty Name="ObjectCode" ColumnName="ObjectCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

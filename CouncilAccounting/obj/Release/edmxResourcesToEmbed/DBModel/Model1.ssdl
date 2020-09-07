@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Council_AccountingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BILL_INWARD">
+    <Key>
+      <PropertyRef Name="Bill_Id" />
+    </Key>
+    <Property Name="Bill_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Form_id" Type="int" />
+    <Property Name="TotalAmount" Type="varchar" MaxLength="400" />
+    <Property Name="BillDate" Type="datetime" />
+    <Property Name="Attachment" Type="varbinary" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="BILL_INWARD_PARTICULARDETAILS">
+    <Key>
+      <PropertyRef Name="Bill_PD_Id" />
+    </Key>
+    <Property Name="Bill_PD_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Bill_Id" Type="int" />
+    <Property Name="AccountCode" Type="varchar" MaxLength="400" />
+    <Property Name="Narration" Type="varchar" MaxLength="400" />
+    <Property Name="Amount" Type="varchar" MaxLength="400" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Council_Accounting.demo.FORM12_WO_REGISTER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FORM12_WO_REGISTER">
+    <Key>
+      <PropertyRef Name="Form12_Id" />
+    </Key>
+    <Property Name="Form12_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="ProjectName" Type="varchar" MaxLength="200" />
+    <Property Name="Work_Order_No" Type="varchar" MaxLength="100" />
+    <Property Name="Ref_WIP_Register" Type="varchar" MaxLength="500" />
+    <Property Name="Estimated_Cost" Type="varchar" MaxLength="1000" />
+    <Property Name="Tender_Cost" Type="varchar" MaxLength="80" />
+    <Property Name="ContractorName" Type="varchar" MaxLength="100" />
+    <Property Name="Sanctioned_Tender_Rates" Type="varchar" MaxLength="100" />
+    <Property Name="Sanctioned_Year" Type="varchar" MaxLength="100" />
+    <Property Name="Planned_completion_date" Type="datetime" />
+    <Property Name="Total_Work_value" Type="varchar" MaxLength="100" />
+    <Property Name="EMD_Receipt_No" Type="varchar" MaxLength="100" />
+    <Property Name="EMD_Amount" Type="varchar" MaxLength="100" />
+    <Property Name="SD_Receipt_No" Type="varchar" MaxLength="200" />
+    <Property Name="Actual_date_completion" Type="datetime" />
+    <Property Name="Completion_certificate_No" Type="varchar" MaxLength="100" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="Signature" Type="varbinary" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="Council_AccountingModelStoreContainer">
+    <EntitySet Name="BILL_INWARD" EntityType="Self.BILL_INWARD" Schema="demo" store:Type="Tables" />
+    <EntitySet Name="BILL_INWARD_PARTICULARDETAILS" EntityType="Self.BILL_INWARD_PARTICULARDETAILS" Schema="demo" store:Type="Tables" />
+    <EntitySet Name="FORM12_WO_REGISTER" EntityType="Self.FORM12_WO_REGISTER" store:Type="Tables" store:Schema="demo">
+      <DefiningQuery>SELECT 
+    [FORM12_WO_REGISTER].[Form12_Id] AS [Form12_Id], 
+    [FORM12_WO_REGISTER].[Date] AS [Date], 
+    [FORM12_WO_REGISTER].[ProjectName] AS [ProjectName], 
+    [FORM12_WO_REGISTER].[Work_Order_No] AS [Work_Order_No], 
+    [FORM12_WO_REGISTER].[Ref_WIP_Register] AS [Ref_WIP_Register], 
+    [FORM12_WO_REGISTER].[Estimated_Cost] AS [Estimated_Cost], 
+    [FORM12_WO_REGISTER].[Tender_Cost] AS [Tender_Cost], 
+    [FORM12_WO_REGISTER].[ContractorName] AS [ContractorName], 
+    [FORM12_WO_REGISTER].[Sanctioned_Tender_Rates] AS [Sanctioned_Tender_Rates], 
+    [FORM12_WO_REGISTER].[Sanctioned_Year] AS [Sanctioned_Year], 
+    [FORM12_WO_REGISTER].[Planned_completion_date] AS [Planned_completion_date], 
+    [FORM12_WO_REGISTER].[Total_Work_value] AS [Total_Work_value], 
+    [FORM12_WO_REGISTER].[EMD_Receipt_No] AS [EMD_Receipt_No], 
+    [FORM12_WO_REGISTER].[EMD_Amount] AS [EMD_Amount], 
+    [FORM12_WO_REGISTER].[SD_Receipt_No] AS [SD_Receipt_No], 
+    [FORM12_WO_REGISTER].[Actual_date_completion] AS [Actual_date_completion], 
+    [FORM12_WO_REGISTER].[Completion_certificate_No] AS [Completion_certificate_No], 
+    [FORM12_WO_REGISTER].[Remark] AS [Remark], 
+    [FORM12_WO_REGISTER].[Signature] AS [Signature]
+    FROM [demo].[FORM12_WO_REGISTER] AS [FORM12_WO_REGISTER]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
